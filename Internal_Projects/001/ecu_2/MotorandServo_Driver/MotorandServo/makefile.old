@@ -1,0 +1,141 @@
+MCAL_PLUGINS_DIR = C:/NXP/AUTOSAR/S32K1XX_MCAL4_3_RTM_1_0_4/eclipse/plugins
+
+DEST_DIR = ./MCAL
+
+# MCAL Base plugin
+MCAL_BASEPI_DIR = $(MCAL_PLUGINS_DIR)/Base_TS_T40D2M10I4R0
+MCAL_BASEPI_INC_DIR = $(MCAL_BASEPI_DIR)/include
+MCAL_BASE_BASICINC = Compiler.h,CompilerDefinition.h,Compiler_Cfg.h,ComStack_Cfg.h,ComStack_Types.h,Mcal.h,Platform_Types.h,Reg_eSys.h,StdRegMacros.h,Std_Types.h
+
+# MCAL Det plugin
+MCAL_DETPI_DIR = $(MCAL_PLUGINS_DIR)/Det_TS_T40D2M10I4R0
+MCAL_DETPI_INC_DIR = $(MCAL_DETPI_DIR)/include
+MCAL_DETPI_SRC_DIR = $(MCAL_DETPI_DIR)/src
+
+# MCAL Dem plugin
+MCAL_DEMPI_DIR = $(MCAL_PLUGINS_DIR)/Dem_TS_T40D2M10I4R0
+MCAL_DEMPI_INC_DIR = $(MCAL_DEMPI_DIR)/include
+MCAL_DEMPI_SRC_DIR = $(MCAL_DEMPI_DIR)/src
+
+# MCAL DIO plugin
+MCAL_DIOPI_DIR = $(MCAL_PLUGINS_DIR)/Dio_TS_T40D2M10I4R0
+MCAL_DIOPI_INC_DIR = $(MCAL_DIOPI_DIR)/include
+MCAL_DIOPI_SRC_DIR = $(MCAL_DIOPI_DIR)/src
+
+# MCAL EcuM plugin
+MCAL_ECUMPI_DIR = $(MCAL_PLUGINS_DIR)/EcuM_TS_T40D2M10I4R0
+MCAL_ECUMPI_INC_DIR = $(MCAL_ECUMPI_DIR)/include
+MCAL_ECUMPI_SRC_DIR = $(MCAL_ECUMPI_DIR)/src
+
+# MCAL GPT plugin
+MCAL_GPTPI_DIR = $(MCAL_PLUGINS_DIR)/Gpt_TS_T40D2M10I4R0
+MCAL_GPTPI_INC_DIR = $(MCAL_GPTPI_DIR)/include
+MCAL_GPTPI_SRC_DIR = $(MCAL_GPTPI_DIR)/src
+
+#MCAL MCL plugin
+MCAL_MCLPI_DIR = $(MCAL_PLUGINS_DIR)/Mcl_TS_T40D2M10I4R0
+MCAL_MCLPI_INC_DIR = $(MCAL_MCLPI_DIR)/include
+MCAL_MCLPI_SRC_DIR = $(MCAL_MCLPI_DIR)/src
+MCAL_MCL_BASICINC = Ftm_Common_Types.h,Mcl.h
+#MCAL Mcu plugin
+MCAL_MCUPI_DIR = $(MCAL_PLUGINS_DIR)/Mcu_TS_T40D2M10I4R0
+MCAL_MCUPI_INC_DIR = $(MCAL_MCUPI_DIR)/include
+MCAL_MCUPI_SRC_DIR = $(MCAL_MCUPI_DIR)/src
+
+## MCAL Port plugin
+MCAL_PORTPI_DIR = $(MCAL_PLUGINS_DIR)/Port_TS_T40D2M10I4R0
+MCAL_PORTPI_INC_DIR = $(MCAL_PORTPI_DIR)/include
+MCAL_PORTPI_SRC_DIR = $(MCAL_PORTPI_DIR)/src
+
+## MCAL PWM plugin
+MCAL_PWMPI_DIR = $(MCAL_PLUGINS_DIR)/Pwm_TS_T40D2M10I4R0
+MCAL_PWMPI_INC_DIR = $(MCAL_PWMPI_DIR)/include
+MCAL_PWMPI_SRC_DIR = $(MCAL_PWMPI_DIR)/src
+
+# MCAL RTE plugin
+MCAL_RTEPI_DIR = $(MCAL_PLUGINS_DIR)/Rte_TS_T40D2M10I4R0
+MCAL_RTEPI_INC_DIR = $(MCAL_RTEPI_DIR)/include
+MCAL_RTEPI_SRC_DIR = $(MCAL_RTEPI_DIR)/src
+
+rtedir:
+	mkdir -p $(DEST_DIR)/RTE/include
+	mkdir -p $(DEST_DIR)/RTE/src
+mcldir:
+	mkdir -p $(DEST_DIR)/MCL/include
+	mkdir -p $(DEST_DIR)/MCL/src
+
+base:
+	mkdir -p $(DEST_DIR)/BASE/include
+	cp $(MCAL_BASEPI_INC_DIR)/{$(MCAL_BASE_BASICINC)} $(DEST_DIR)/BASE/include
+	cp -r $(MCAL_BASEPI_DIR)/generate_PC/include/ $(DEST_DIR)/BASE
+dem:
+	mkdir -p $(DEST_DIR)/DEM
+	cp -r $(MCAL_DEMPI_DIR)/generate_PC/include $(DEST_DIR)/DEM
+	cp -r $(MCAL_DEMPI_INC_DIR) $(DEST_DIR)/DEM/
+	cp -r $(MCAL_DEMPI_SRC_DIR) $(DEST_DIR)/DEM/src
+det:
+	mkdir -p $(DEST_DIR)/DET
+	cp -RPr $(MCAL_DETPI_INC_DIR) $(DEST_DIR)/DET/include
+	cp -RPr $(MCAL_DETPI_SRC_DIR) $(DEST_DIR)/DET/src
+rte: rtedir
+	cp -RPr $(MCAL_RTEPI_INC_DIR) $(DEST_DIR)/RTE/include
+	cp -RPr $(MCAL_RTEPI_SRC_DIR) $(DEST_DIR)/RTE/src
+ecum:
+	mkdir -p $(DEST_DIR)/ECUM
+	cp -RPr $(MCAL_ECUMPI_INC_DIR) $(DEST_DIR)/ECUM/include
+	cp -RPr $(MCAL_ECUMPI_SRC_DIR) $(DEST_DIR)/ECUM/src
+mcl: mcldir
+	cp $(MCAL_BASEPI_INC_DIR)/Mcl_MemMap.h $(DEST_DIR)/BASE/include
+	cp -r $(MCAL_MCLPI_INC_DIR)/ $(DEST_DIR)/MCL
+	cp $(MCAL_MCLPI_SRC_DIR)/Ftm_Common.c $(DEST_DIR)/MCL/src
+	cp $(MCAL_RTEPI_INC_DIR)/SchM_Mcl.h $(DEST_DIR)/RTE/include
+	cp $(MCAL_RTEPI_SRC_DIR)/SchM_Mcl.c $(DEST_DIR)/RTE/src
+
+# Module Drivers
+dio: rtedir base det
+	mkdir -p $(DEST_DIR)/DIO
+	cp -RPr $(MCAL_DIOPI_INC_DIR) $(DEST_DIR)/DIO/include
+	cp -RPr $(MCAL_DIOPI_SRC_DIR) $(DEST_DIR)/DIO/src
+	cp $(MCAL_BASEPI_INC_DIR)/{Dio_MemMap.h,SilRegMacros.h,RegLockMacros.h} $(DEST_DIR)/BASE/include
+	cp $(MCAL_RTEPI_INC_DIR)/SchM_Dio.h $(DEST_DIR)/RTE/include
+	cp $(MCAL_RTEPI_SRC_DIR)/SchM_Dio.c $(DEST_DIR)/RTE/src
+gpt: rtedir mcldir base det mcl ecum
+	mkdir -p $(DEST_DIR)/GPT
+	cp -RPr $(MCAL_GPTPI_INC_DIR) $(DEST_DIR)/GPT/include
+	cp -RPr $(MCAL_GPTPI_SRC_DIR) $(DEST_DIR)/GPT/src
+	cp $(MCAL_MCLPI_INC_DIR)/{Reg_eSys_Lpit.h,Reg_eSys_Lptmr.h} $(DEST_DIR)/MCL/include
+	cp $(MCAL_MCLPI_SRC_DIR)/{Lpit_Common.c,Lptmr_Common.c} $(DEST_DIR)/MCL/src
+	cp $(MCAL_RTEPI_INC_DIR)/SchM_Gpt.h $(DEST_DIR)/RTE/include
+	cp $(MCAL_RTEPI_SRC_DIR)/SchM_Gpt.c $(DEST_DIR)/RTE/src
+mcu: rtedir base dem det
+	mkdir -p $(DEST_DIR)/MCU
+	cp -RPr $(MCAL_MCUPI_INC_DIR) $(DEST_DIR)/MCU/include
+	cp -RPr $(MCAL_MCUPI_SRC_DIR) $(DEST_DIR)/MCU/src
+	cp $(MCAL_BASEPI_INC_DIR)/Mcu_MemMap.h $(DEST_DIR)/BASE/include
+	cp $(MCAL_RTEPI_INC_DIR)/SchM_Mcu.h $(DEST_DIR)/RTE/include
+	cp $(MCAL_RTEPI_SRC_DIR)/SchM_Mcu.c $(DEST_DIR)/RTE/src
+port: rtedir base det
+	mkdir -p $(DEST_DIR)/PORT
+	cp -RPr $(MCAL_PORTPI_INC_DIR) $(DEST_DIR)/PORT/include
+	cp -RPr $(MCAL_PORTPI_SRC_DIR) $(DEST_DIR)/PORT/src
+	cp $(MCAL_BASEPI_INC_DIR)/{Port_MemMap.h,SilRegMacros.h,RegLockMacros.h} $(DEST_DIR)/BASE/include
+	cp $(MCAL_RTEPI_INC_DIR)/SchM_Port.h $(DEST_DIR)/RTE/include
+	cp $(MCAL_RTEPI_SRC_DIR)/SchM_Port.c $(DEST_DIR)/RTE/src
+
+pwm: rtedir mcldir base det mcl 
+	mkdir -p $(DEST_DIR)/PWM
+	cp -RPr $(MCAL_PWMPI_INC_DIR) $(DEST_DIR)/PWM/include
+	cp -RPr $(MCAL_PWMPI_SRC_DIR) $(DEST_DIR)/PWM/src
+	cp $(MCAL_BASEPI_INC_DIR)/{Pwm_MemMap.h,SilRegMacros.h} $(DEST_DIR)/BASE/include
+	cp $(MCAL_RTEPI_INC_DIR)/SchM_Pwm.h $(DEST_DIR)/RTE/include
+	cp $(MCAL_RTEPI_SRC_DIR)/SchM_Pwm.c $(DEST_DIR)/RTE/src
+	cp $(MCAL_MCLPI_INC_DIR)/{Ftm_Common_Types.h,Reg_eSys_FlexIO.h} $(DEST_DIR)/RTE/include
+
+cleanmcu:
+	rm -rf $(DEST_DIR)/MCU/*
+
+cleanpwm:
+	rm -rf $(DEST_DIR)/PWM/*
+
+cleanall:
+	rm -rf $(DEST_DIR)/*

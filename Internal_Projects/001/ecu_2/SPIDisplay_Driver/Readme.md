@@ -1,0 +1,1 @@
+This folder contains all project files for the SPI display driver.

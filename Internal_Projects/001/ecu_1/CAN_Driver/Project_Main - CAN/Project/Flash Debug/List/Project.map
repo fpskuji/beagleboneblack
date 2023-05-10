@@ -1,0 +1,1467 @@
+###############################################################################
+#
+# IAR ELF Linker V9.30.1.335/W64 for ARM                  26/Apr/2023  18:20:24
+# Copyright 2007-2022 IAR Systems AB.
+#
+#    Output file  =
+#        D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Exe\Project.out
+#    Map file     =
+#        D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\List\Project.map
+#    Command line =
+#        -f
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Exe\Project.out.rsp"
+#        ("D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Can\Can.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\EB_Config\src\Can_Cfg.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Can\Can_Flexcan.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Can\Can_Irq.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\EB_Config\src\Can_PBcfg.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\CanIf\CanIf.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\EB_Config\src\CDD_Mcl_Cfg.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\EB_Config\src\CDD_Mcl_PBcfg.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Dem\Dem.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Det\Det.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Dio\Dio.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\EB_Config\src\Dio_Cfg.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Dio\Dio_Gpio.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\EcuM\EcuM.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\Stub\Flexcan.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcl\Ftm_Common.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Gpt\Gpt.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\EB_Config\src\Gpt_Cfg.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Gpt\Gpt_Ftm.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Gpt\Gpt_Ipw.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Gpt\Gpt_LPit.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Gpt\Gpt_Lptmr.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\EB_Config\src\Gpt_PBcfg.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Gpt\Gpt_SRtc.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Icu\Icu.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\EB_Config\src\Icu_Cfg.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\EB_Config\src\Icu_DmaNotification.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Icu\Icu_Ftm.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Icu\Icu_Ipw.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Icu\Icu_LPit.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Icu\Icu_Lptmr.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\EB_Config\src\Icu_PBcfg.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Icu\Icu_Port_Ci.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Icu\Icu_Port_Ci_Irq.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\Stub\IT_Controller.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\Stub\IT_Handler.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcl\LPit_Common.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcl\Lptmr_Common.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\Application\main.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcu\Mcu.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\EB_Config\src\Mcu_Cfg.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcu\Mcu_CMU.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcu\Mcu_CMU_Irq.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcu\Mcu_CortexM4.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcu\Mcu_IPW.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcu\Mcu_IPW_Irq.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\EB_Config\src\Mcu_PBcfg.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcu\Mcu_PCC.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcu\Mcu_PMC.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcu\Mcu_PMC_Irq.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcu\Mcu_RCM.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcu\Mcu_RCM_Irq.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcu\Mcu_SCG.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcu\Mcu_SIM.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Mcu\Mcu_SMC.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Os\Os_counter_api.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Port\Port.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\EB_Config\src\Port_Cfg.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Port\Port_Ipw.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\EB_Config\src\Port_PBcfg.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Port\Port_Port_Ci.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Rte\SchM_Can.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Rte\SchM_Dio.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Rte\SchM_Gpt.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Rte\SchM_Icu.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Rte\SchM_Mcu.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\MCAL\Rte\SchM_Port.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\Startup\startup_S32K144.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\Startup\system_S32K144.o"
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Obj\Stub\Ultrasonic.o" --no_out_extension -o
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\Exe\Project.out" --redirect
+#        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
+#        "D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main
+#        - CAN\Project\Flash Debug\List\Project.map" --config "C:\Program
+#        Files\IAR Systems\Embedded Workbench
+#        9.1\arm/config/linker/NXP/S32K144.icf" --entry __iar_program_start
+#        --redirect __write=__write_buffered --vfe --text_out locale
+#        --cpu=Cortex-M4 --fpu=VFPv4_sp)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__CPP_Runtime   = 1
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because --advanced_heap
+was not specified and the application did not appear to
+be primarily optimized for speed.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x3ff] |
+                [from 0x410 to 0x7'ffff] { ro };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block PROC_STACK with size = 0, alignment = 8 { };
+define block HEAP with size = 4K, alignment = 8 { };
+"P3":  place in [from 0x1fff'8000 to 0x1fff'ffff] |
+                [from 0x2000'0000 to 0x2000'6fff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+"P5":  place in [from 0x400 to 0x40f] { section FlashConfig };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  ro section application_specific_ro  in "P2"
+  rw section application_specific_rw  in "P4"
+
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x400
+  .intvec            ro code          0x0   0x400  startup_S32K144.o [16]
+                                  - 0x400   0x400
+
+"P5":                                        0x10
+  FlashConfig        ro code        0x400    0x10  startup_S32K144.o [16]
+                                  - 0x410    0x10
+
+"P1":                                      0x668a
+  .mcal_text         ro code        0x410  0x1824  Can_Flexcan.o [3]
+  .text              ro code       0x1c34   0x27c  SchM_Can.o [15]
+  .text              ro code       0x1eb0     0x8  Os_counter_api.o [13]
+  .text              ro code       0x1eb8   0x114  Det.o [6]
+  .text              ro code       0x1fcc    0x4e  CanIf.o [4]
+  .text              ro code       0x201a    0x14  memset.o [20]
+  .mcal_text         ro code       0x202e     0xc  Dio.o [7]
+  .text              ro code       0x203a     0x2  startup_S32K144.o [16]
+  .text              ro code       0x203c    0x66  ABImemset.o [20]
+  .text              ro code       0x20a2     0x2  startup_S32K144.o [16]
+  .mcal_text         ro code       0x20a4    0x44  Dio_Gpio.o [7]
+  .mcal_text         ro code       0x20e8   0xb84  Icu_Ftm.o [10]
+  .text              ro code       0x2c6c   0x774  SchM_Icu.o [15]
+  .mcal_text         ro code       0x33e0   0x4c0  Icu.o [10]
+  .mcal_text         ro code       0x38a0   0x136  Icu_Ipw.o [10]
+  .text              ro code       0x39d6     0x2  startup_S32K144.o [16]
+  .text              ro code       0x39d8     0x2  EcuM.o [8]
+  .text              ro code       0x39da     0x2  startup_S32K144.o [16]
+  .mcal_text         ro code       0x39dc   0x2d4  Icu_Port_Ci.o [10]
+  .mcal_text         ro code       0x3cb0   0x334  Icu_LPit.o [10]
+  .mcal_text         ro code       0x3fe4   0x1c0  Icu_Lptmr.o [10]
+  .mcal_text         ro code       0x41a4   0x4e8  Gpt.o [9]
+  .mcal_text         ro code       0x468c    0xa6  Gpt_Ipw.o [9]
+  .text              ro code       0x4732     0x2  startup_S32K144.o [16]
+  .mcal_text         ro code       0x4734   0x48c  Gpt_Ftm.o [9]
+  .mcal_text         ro code       0x4bc0   0x2a8  Gpt_LPit.o [9]
+  .text              ro code       0x4e68   0x1e8  SchM_Gpt.o [15]
+  .mcal_text         ro code       0x5050   0x358  Port_Port_Ci.o [14]
+  .mcal_text         ro code       0x53a8   0x2ec  Mcu_SCG.o [12]
+  .text              ro code       0x5694   0x246  DblDiv.o [19]
+  .text              ro code       0x58da     0x2  startup_S32K144.o [16]
+  .mcal_const_cfg    const         0x58dc   0x1cc  Icu_PBcfg.o [2]
+  .text              ro code       0x5aa8   0x1aa  DblMul.o [19]
+  .text              ro code       0x5c52     0x2  startup_S32K144.o [16]
+  .mcal_text         ro code       0x5c54   0x184  Can.o [3]
+  .mcal_const_cfg    const         0x5dd8   0x100  Mcu_PBcfg.o [2]
+  .mcal_text         ro code       0x5ed8    0xe0  Mcu_IPW.o [12]
+  .mcal_text         ro code       0x5fb8    0xc0  Mcu_SIM.o [12]
+  .mcal_text         ro code       0x6078    0x44  Mcu_RCM.o [12]
+  .mcal_text         ro code       0x60bc    0x24  Mcu_PMC.o [12]
+  .mcal_text         ro code       0x60e0    0x10  Mcu_SMC.o [12]
+  .mcal_text         ro code       0x60f0    0x68  Mcu_PCC.o [12]
+  .mcal_const_cfg    const         0x6158    0xb0  Port_PBcfg.o [2]
+  .text              ro code       0x6208    0xae  main.o [1]
+  .text              ro code       0x62b6     0x2  startup_S32K144.o [16]
+  .mcal_text         ro code       0x62b8    0x74  Mcu.o [12]
+  .mcal_text         ro code       0x632c    0x28  Port.o [14]
+  .text              ro code       0x6354    0x34  IT_Controller.o [17]
+  .text              ro code       0x6388    0x8c  Ultrasonic.o [17]
+  .text              ro code       0x6414    0x1c  U32ToDbl.o [19]
+  .text              ro code       0x6430    0x22  DblToU32.o [19]
+  .text              ro code       0x6452    0xa2  packbits_init.o [20]
+  .text              ro code       0x64f4     0x6  abort.o [18]
+  .text              ro code       0x64fc     0xc  XXexit.o [20]
+  .mcal_const_cfg    const         0x6508    0x94  Port_PBcfg.o [2]
+  .mcal_const_cfg    const         0x659c    0x70  Gpt_PBcfg.o [2]
+  .text              ro code       0x660c    0x54  system_S32K144.o [16]
+  .text              ro code       0x6660    0x3c  IT_Handler.o [17]
+  .mcal_const_cfg    const         0x669c    0x38  Can_PBcfg.o [2]
+  .text              ro code       0x66d4    0x38  zero_init3.o [20]
+  .mcal_const_cfg    const         0x670c    0x30  Gpt_PBcfg.o [2]
+  .mcal_const_cfg    const         0x673c    0x30  Icu_PBcfg.o [2]
+  .text              ro code       0x676c    0x28  data_init.o [20]
+  .mcal_const_cfg    const         0x6794    0x24  Icu_PBcfg.o [2]
+  .text              ro code       0x67b8    0x22  fpinit_M.o [19]
+  .iar.init_table    const         0x67dc    0x2c  - Linker created -
+  .mcal_const        const         0x6808    0x20  Ftm_Common.o [11]
+  .mcal_const_cfg    const         0x6828    0x20  Icu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x6848    0x20  Mcu_PBcfg.o [2]
+  .text              ro code       0x6868    0x1e  cmain.o [20]
+  .text              ro code       0x6886     0x4  low_level_init.o [18]
+  .text              ro code       0x688a     0x4  exit.o [18]
+  .text              ro code       0x6890     0xa  cexit.o [20]
+  .mcal_const_cfg    const         0x689c    0x1c  Mcu_PBcfg.o [2]
+  .text              ro code       0x68b8    0x1c  cstartup_M.o [20]
+  .mcal_const        const         0x68d4    0x18  Can_Flexcan.o [3]
+  .mcal_const_cfg    const         0x68ec    0x18  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x6904    0x18  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x691c    0x18  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x6934    0x18  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x694c    0x18  Port_PBcfg.o [2]
+  .mcal_const        const         0x6964    0x14  Icu_Port_Ci.o [10]
+  .mcal_const_cfg    const         0x6978    0x14  Can_Cfg.o [2]
+  .mcal_const_cfg    const         0x698c    0x14  Can_PBcfg.o [2]
+  .mcal_const_cfg    const         0x69a0    0x14  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x69b4    0x10  Mcu_PBcfg.o [2]
+  .text              ro code       0x69c4    0x10  startup_S32K144.o [16]
+  .mcal_const        const         0x69d4     0xc  Can_Flexcan.o [3]
+  .mcal_const_cfg    const         0x69e0     0xc  Can_Cfg.o [2]
+  .mcal_const_cfg    const         0x69ec     0xc  Can_PBcfg.o [2]
+  .mcal_const_cfg    const         0x69f8     0xc  Can_PBcfg.o [2]
+  .mcal_const_cfg    const         0x6a04     0xc  Icu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x6a10     0xc  Mcu_PBcfg.o [2]
+  .rodata            const         0x6a1c     0xc  main.o [1]
+  .rodata            const         0x6a28     0xc  main.o [1]
+  .mcal_const_cfg    const         0x6a34     0x8  Icu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x6a3c     0x8  Icu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x6a44     0x8  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x6a4c     0x8  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x6a54     0x8  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x6a5c     0x8  Port_PBcfg.o [2]
+  .mcal_const        const         0x6a64     0x4  LPit_Common.o [11]
+  .mcal_const_cfg    const         0x6a68     0x4  Can_Cfg.o [2]
+  .mcal_const_cfg    const         0x6a6c     0x4  Can_PBcfg.o [2]
+  .mcal_const_cfg    const         0x6a70     0x4  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x6a74     0x4  Mcu_PBcfg.o [2]
+  .text              ro code       0x6a78     0x4  startup_S32K144.o [16]
+  .rodata            const         0x6a7c     0x0  zero_init3.o [20]
+  .rodata            const         0x6a7c     0x0  packbits_init.o [20]
+  Initializer bytes  const         0x6a7c    0x1d  <for P3 s0>
+                                 - 0x6a99  0x6689
+
+"P3", part 1 of 3:                          0x4b9
+  P3 s0                       0x1fff'8000   0x4b9  <Init block>
+    .mcal_data       inited   0x1fff'8000   0x200  Gpt_Ftm.o [9]
+    .mcal_data       inited   0x1fff'8200    0xa0  Icu_Port_Ci.o [10]
+    .mcal_data       inited   0x1fff'82a0    0x80  Icu_Ftm.o [10]
+    .mcal_data       inited   0x1fff'8320    0x80  Icu_Ftm.o [10]
+    .mcal_data       inited   0x1fff'83a0    0x80  Icu_Ftm.o [10]
+    .mcal_data       inited   0x1fff'8420    0x40  Icu_Ftm.o [10]
+    .mcal_data       inited   0x1fff'8460    0x2c  Icu_Port_Ci.o [10]
+    .mcal_data       inited   0x1fff'848c     0x4  Can.o [3]
+    .mcal_data       inited   0x1fff'8490     0x4  Can.o [3]
+    .mcal_data       inited   0x1fff'8494     0x4  Can.o [3]
+    .mcal_data       inited   0x1fff'8498     0x4  Can.o [3]
+    .mcal_data       inited   0x1fff'849c     0x4  Gpt.o [9]
+    .mcal_data       inited   0x1fff'84a0     0x4  Icu.o [10]
+    .mcal_data       inited   0x1fff'84a4     0x4  Icu_LPit.o [10]
+    .mcal_data       inited   0x1fff'84a8     0x4  Mcu.o [12]
+    .mcal_data       inited   0x1fff'84ac     0x4  Mcu_IPW.o [12]
+    .mcal_data       inited   0x1fff'84b0     0x4  Port.o [14]
+    .data            inited   0x1fff'84b4     0x1  Ultrasonic.o [17]
+    .mcal_data       inited   0x1fff'84b5     0x1  Can.o [3]
+    .mcal_data       inited   0x1fff'84b6     0x1  Gpt.o [9]
+    .mcal_data       inited   0x1fff'84b7     0x1  Icu.o [10]
+    .mcal_data       inited   0x1fff'84b8     0x1  Icu_Lptmr.o [10]
+                            - 0x1fff'84b9   0x4b9
+
+"P3", part 2 of 3:                          0x41c
+  .mcal_bss          zero     0x1fff'84bc   0x100  Icu_Ftm.o [10]
+  .mcal_bss          zero     0x1fff'85bc    0xb8  Can_Flexcan.o [3]
+  .bss               zero     0x1fff'8674    0x40  CanIf.o [4]
+  .mcal_bss          zero     0x1fff'86b4    0x14  Port_Port_Ci.o [14]
+  .bss               zero     0x1fff'86c8    0x10  Det.o [6]
+  .bss               zero     0x1fff'86d8    0x10  Det.o [6]
+  .mcal_bss          zero     0x1fff'86e8    0x10  Gpt.o [9]
+  .mcal_bss          zero     0x1fff'86f8    0x10  Gpt.o [9]
+  .mcal_bss          zero     0x1fff'8708     0xc  Icu.o [10]
+  .mcal_bss          zero     0x1fff'8714     0xc  Icu.o [10]
+  .mcal_bss          zero     0x1fff'8720     0xc  Icu.o [10]
+  .bss               zero     0x1fff'872c     0x8  Det.o [6]
+  .bss               zero     0x1fff'8734     0x8  Det.o [6]
+  .bss               zero     0x1fff'873c     0x8  Det.o [6]
+  .bss               zero     0x1fff'8744     0x8  Det.o [6]
+  .bss               zero     0x1fff'874c     0x8  Det.o [6]
+  .bss               zero     0x1fff'8754     0x8  Det.o [6]
+  .mcal_bss          zero     0x1fff'875c     0x8  Icu.o [10]
+  .mcal_bss          zero     0x1fff'8764     0x8  Icu.o [10]
+  .mcal_bss          zero     0x1fff'876c     0x8  Icu.o [10]
+  .mcal_bss          zero     0x1fff'8774     0x8  Icu.o [10]
+  .bss               zero     0x1fff'877c     0x4  CanIf.o [4]
+  .bss               zero     0x1fff'8780     0x4  Det.o [6]
+  .bss               zero     0x1fff'8784     0x4  Det.o [6]
+  .bss               zero     0x1fff'8788     0x4  IT_Controller.o [17]
+  .bss               zero     0x1fff'878c     0x4  main.o [1]
+  .bss               zero     0x1fff'8790     0x4  SchM_Can.o [15]
+  .bss               zero     0x1fff'8794     0x4  SchM_Can.o [15]
+  .bss               zero     0x1fff'8798     0x4  SchM_Can.o [15]
+  .bss               zero     0x1fff'879c     0x4  SchM_Can.o [15]
+  .bss               zero     0x1fff'87a0     0x4  SchM_Can.o [15]
+  .bss               zero     0x1fff'87a4     0x4  SchM_Can.o [15]
+  .bss               zero     0x1fff'87a8     0x4  SchM_Can.o [15]
+  .bss               zero     0x1fff'87ac     0x4  SchM_Can.o [15]
+  .bss               zero     0x1fff'87b0     0x4  SchM_Can.o [15]
+  .bss               zero     0x1fff'87b4     0x4  SchM_Can.o [15]
+  .bss               zero     0x1fff'87b8     0x4  SchM_Can.o [15]
+  .bss               zero     0x1fff'87bc     0x4  SchM_Can.o [15]
+  .bss               zero     0x1fff'87c0     0x4  SchM_Can.o [15]
+  .bss               zero     0x1fff'87c4     0x4  SchM_Can.o [15]
+  .bss               zero     0x1fff'87c8     0x4  SchM_Can.o [15]
+  .bss               zero     0x1fff'87cc     0x4  SchM_Can.o [15]
+  .bss               zero     0x1fff'87d0     0x4  SchM_Gpt.o [15]
+  .bss               zero     0x1fff'87d4     0x4  SchM_Gpt.o [15]
+  .bss               zero     0x1fff'87d8     0x4  SchM_Gpt.o [15]
+  .bss               zero     0x1fff'87dc     0x4  SchM_Gpt.o [15]
+  .bss               zero     0x1fff'87e0     0x4  SchM_Gpt.o [15]
+  .bss               zero     0x1fff'87e4     0x4  SchM_Gpt.o [15]
+  .bss               zero     0x1fff'87e8     0x4  SchM_Gpt.o [15]
+  .bss               zero     0x1fff'87ec     0x4  SchM_Gpt.o [15]
+  .bss               zero     0x1fff'87f0     0x4  SchM_Gpt.o [15]
+  .bss               zero     0x1fff'87f4     0x4  SchM_Gpt.o [15]
+  .bss               zero     0x1fff'87f8     0x4  SchM_Gpt.o [15]
+  .bss               zero     0x1fff'87fc     0x4  SchM_Gpt.o [15]
+  .bss               zero     0x1fff'8800     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8804     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8808     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'880c     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8810     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8814     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8818     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'881c     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8820     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8824     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8828     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'882c     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8830     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8834     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8838     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'883c     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8840     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8844     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8848     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'884c     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8850     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8854     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8858     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'885c     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8860     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8864     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8868     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'886c     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8870     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8874     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8878     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'887c     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8880     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8884     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8888     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'888c     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8890     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8894     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'8898     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'889c     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'88a0     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'88a4     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'88a8     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'88ac     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'88b0     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'88b4     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'88b8     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'88bc     0x4  SchM_Icu.o [15]
+  .bss               zero     0x1fff'88c0     0x4  Ultrasonic.o [17]
+  .bss               zero     0x1fff'88c4     0x4  Ultrasonic.o [17]
+  .mcal_bss          zero     0x1fff'88c8     0x4  Can_Flexcan.o [3]
+  .mcal_bss          zero     0x1fff'88cc     0x4  Icu.o [10]
+  .bss               zero     0x1fff'88d0     0x1  CanIf.o [4]
+  .bss               zero     0x1fff'88d1     0x1  CanIf.o [4]
+  .bss               zero     0x1fff'88d2     0x1  Det.o [6]
+  .bss               zero     0x1fff'88d3     0x1  Det.o [6]
+  .mcal_bss          zero     0x1fff'88d4     0x1  Icu.o [10]
+  .mcal_bss          zero     0x1fff'88d5     0x1  Mcu.o [12]
+  .mcal_bss          zero     0x1fff'88d6     0x1  Mcu.o [12]
+                            - 0x1fff'88d7   0x41b
+
+"P3", part 3 of 3:                          0x800
+  CSTACK                      0x1fff'88d8   0x800  <Block>
+    CSTACK           uninit   0x1fff'88d8   0x800  <Block tail>
+                            - 0x1fff'90d8   0x800
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+       0x6a9a     0x7'ffff  0x7'9566
+  0x1fff'84b9  0x1fff'84bb       0x3
+  0x1fff'90d8  0x1fff'ffff    0x6f28
+  0x2000'0000  0x2000'6fff    0x7000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x41b:
+          0x1fff'84bc  0x41b
+
+Copy/packbits (__iar_packbits_init3)
+    1 source range, total size 0x1d (2% of destination):
+               0x6a7c   0x1d
+    1 destination range, total size 0x4b9:
+          0x1fff'8000  0x4b9
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module             ro code  ro data  rw data
+    ------             -------  -------  -------
+command line/config:
+    --------------------------------------------
+    Total:
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\Application: [1]
+    main.o                 174       24        4
+    --------------------------------------------
+    Total:                 174       24        4
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\EB_Config\src: [2]
+    Can_Cfg.o                        36
+    Can_PBcfg.o                     104
+    Gpt_PBcfg.o                     160
+    Icu_PBcfg.o                     604
+    Mcu_PBcfg.o                     492
+    Port_PBcfg.o                    356
+    --------------------------------------------
+    Total:                        1'752
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Can: [3]
+    Can.o                  388        1       17
+    Can_Flexcan.o        6'180       36      188
+    --------------------------------------------
+    Total:               6'568       37      205
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\CanIf: [4]
+    CanIf.o                 78                70
+    --------------------------------------------
+    Total:                  78                70
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Dem: [5]
+    --------------------------------------------
+    Total:
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Det: [6]
+    Det.o                  276                90
+    --------------------------------------------
+    Total:                 276                90
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Dio: [7]
+    Dio.o                   12
+    Dio_Gpio.o              68
+    --------------------------------------------
+    Total:                  80
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\EcuM: [8]
+    EcuM.o                   2
+    --------------------------------------------
+    Total:                   2
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Gpt: [9]
+    Gpt.o                1'256                37
+    Gpt_Ftm.o            1'164       12      512
+    Gpt_Ipw.o              166
+    Gpt_LPit.o             680
+    --------------------------------------------
+    Total:               3'266       12      549
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Icu: [10]
+    Icu.o                1'216                78
+    Icu_Ftm.o            2'948       10      704
+    Icu_Ipw.o              310
+    Icu_LPit.o             820                 4
+    Icu_Lptmr.o            448        1        1
+    Icu_Port_Ci.o          724       25      204
+    --------------------------------------------
+    Total:               6'466       36      991
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Mcl: [11]
+    Ftm_Common.o                     32
+    LPit_Common.o                     4
+    --------------------------------------------
+    Total:                           36
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Mcu: [12]
+    Mcu.o                  116                 6
+    Mcu_IPW.o              224                 4
+    Mcu_PCC.o              104
+    Mcu_PMC.o               36
+    Mcu_RCM.o               68
+    Mcu_SCG.o              748
+    Mcu_SIM.o              192
+    Mcu_SMC.o               16
+    --------------------------------------------
+    Total:               1'504                10
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Os: [13]
+    Os_counter_api.o         8
+    --------------------------------------------
+    Total:                   8
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Port: [14]
+    Port.o                  40                 4
+    Port_Port_Ci.o         856                20
+    --------------------------------------------
+    Total:                 896                24
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Rte: [15]
+    SchM_Can.o             636                64
+    SchM_Gpt.o             488                48
+    SchM_Icu.o           1'908               192
+    --------------------------------------------
+    Total:               3'032               304
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\Startup: [16]
+    startup_S32K144.o    1'076
+    system_S32K144.o        84
+    --------------------------------------------
+    Total:               1'160
+
+D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\Stub: [17]
+    IT_Controller.o         52                 4
+    IT_Handler.o            60
+    Ultrasonic.o           140                 9
+    --------------------------------------------
+    Total:                 252                13
+
+dl7M_tln.a: [18]
+    abort.o                  6
+    exit.o                   4
+    low_level_init.o         4
+    --------------------------------------------
+    Total:                  14
+
+m7M_tls.a: [19]
+    DblDiv.o               582
+    DblMul.o               426
+    DblToU32.o              34
+    U32ToDbl.o              28
+    fpinit_M.o              34
+    --------------------------------------------
+    Total:               1'104
+
+rt7M_tl.a: [20]
+    ABImemset.o            102
+    XXexit.o                12
+    cexit.o                 10
+    cmain.o                 30
+    cstartup_M.o            28
+    data_init.o             40
+    memset.o                20
+    packbits_init.o        162
+    zero_init3.o            56
+    --------------------------------------------
+    Total:                 460
+
+    Gaps                     4        4
+    Linker created                   44    2'048
+------------------------------------------------
+    Grand Total:        25'344    1'945    4'308
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base        0x67dc          --   Gb  - Linker created -
+.iar.init_table$$Limit       0x6808          --   Gb  - Linker created -
+?main                        0x6869         Code  Gb  cmain.o [20]
+ADC0_IRQHandler              0x6a79         Code  Wk  startup_S32K144.o [16]
+ADC1_IRQHandler              0x6a79         Code  Wk  startup_S32K144.o [16]
+BusFault_Handler             0x39db         Code  Wk  startup_S32K144.o [16]
+CAN0_Error_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+CAN0_ORed_0_15_MB_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+CAN0_ORed_16_31_MB_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+CAN0_ORed_IRQHandler         0x6a79         Code  Wk  startup_S32K144.o [16]
+CAN0_Wake_Up_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+CAN1_Error_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+CAN1_ORed_0_15_MB_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+CAN1_ORed_IRQHandler         0x6a79         Code  Wk  startup_S32K144.o [16]
+CAN2_Error_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+CAN2_ORed_0_15_MB_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+CAN2_ORed_IRQHandler         0x6a79         Code  Wk  startup_S32K144.o [16]
+CMP0_IRQHandler              0x6a79         Code  Wk  startup_S32K144.o [16]
+CSTACK$$Base            0x1fff'88d8          --   Gb  - Linker created -
+CSTACK$$Limit           0x1fff'90d8          --   Gb  - Linker created -
+CanIf_ControllerModeIndication
+                             0x2019    0x2  Code  Gb  CanIf.o [4]
+CanIf_RxIndication           0x1fcd   0x3a  Code  Gb  CanIf.o [4]
+CanIf_bRxFlag           0x1fff'88d1    0x1  Data  Gb  CanIf.o [4]
+CanIf_u8RxIndicationCnt
+                        0x1fff'88d0    0x1  Data  Gb  CanIf.o [4]
+CanStatic_ConfigSet          0x69e0    0xc  Data  Gb  Can_Cfg.o [2]
+CanStatic_pControlerDescriptors
+                        0x1fff'8494    0x4  Data  Gb  Can.o [3]
+CanStatic_pCurrentConfig
+                        0x1fff'8498    0x4  Data  Gb  Can.o [3]
+Can_Config                   0x698c   0x14  Data  Gb  Can_PBcfg.o [2]
+Can_ControllerStatuses  0x1fff'85bc   0xb8  Data  Gb  Can_Flexcan.o [3]
+Can_FilterMasks0_PB          0x6a6c    0x4  Data  Lc  Can_PBcfg.o [2]
+Can_FlexCan_DisableInterrupts
+                              0x411   0x92  Code  Lc  Can_Flexcan.o [3]
+Can_FlexCan_EnableInterrupts
+                              0x4a3   0xd4  Code  Lc  Can_Flexcan.o [3]
+Can_FlexCan_GotoFreezeMode
+                             0x125b  0x118  Code  Lc  Can_Flexcan.o [3]
+Can_FlexCan_InitBaudrate
+                             0x14f9   0xa2  Code  Lc  Can_Flexcan.o [3]
+Can_FlexCan_InitController
+                             0x16a9  0x324  Code  Gb  Can_Flexcan.o [3]
+Can_FlexCan_InitReceiveMBs
+                              0x653  0x1d4  Code  Lc  Can_Flexcan.o [3]
+Can_FlexCan_InitRxInvidualMask
+                              0x577   0xdc  Code  Lc  Can_Flexcan.o [3]
+Can_FlexCan_InitTransmitMBs
+                              0x827  0x1e4  Code  Lc  Can_Flexcan.o [3]
+Can_FlexCan_InitVariables
+                             0x159d  0x104  Code  Gb  Can_Flexcan.o [3]
+Can_FlexCan_MainFunctionRead
+                             0x1b65   0xac  Code  Gb  Can_Flexcan.o [3]
+Can_FlexCan_ProcessRxNormal
+                              0xfcd  0x262  Code  Lc  Can_Flexcan.o [3]
+Can_FlexCan_ResetController
+                             0x1439   0xc0  Code  Lc  Can_Flexcan.o [3]
+Can_FlexCan_SellectClockSource
+                             0x1373   0xc0  Code  Lc  Can_Flexcan.o [3]
+Can_FlexCan_SetControllerMode
+                             0x19cd   0x46  Code  Gb  Can_Flexcan.o [3]
+Can_FlexCan_SetControllerToSleepMode
+                              0xda3   0x5c  Code  Lc  Can_Flexcan.o [3]
+Can_FlexCan_SetControllerToStartMode
+                              0xc2b  0x178  Code  Lc  Can_Flexcan.o [3]
+Can_FlexCan_SetControllerToStopMode
+                              0xa0b  0x220  Code  Lc  Can_Flexcan.o [3]
+Can_FlexCan_UpdateMB          0xdff  0x1c4  Code  Lc  Can_Flexcan.o [3]
+Can_FlexCan_ValidHth         0x123d   0x1e  Code  Lc  Can_Flexcan.o [3]
+Can_FlexCan_Write            0x1a19  0x142  Code  Gb  Can_Flexcan.o [3]
+Can_IflagImask               0x68d4   0x18  Data  Gb  Can_Flexcan.o [3]
+Can_Init                     0x5c55   0x7a  Code  Gb  Can.o [3]
+Can_MainFunction_Read        0x5da1   0x1e  Code  Gb  Can.o [3]
+Can_SetControllerMode        0x5ccf   0x6e  Code  Gb  Can.o [3]
+Can_Write                    0x5d3d   0x64  Code  Gb  Can.o [3]
+Can_eDriverStatus       0x1fff'84b5    0x1  Data  Gb  Can.o [3]
+Can_pControlerDescriptors
+                        0x1fff'8490    0x4  Data  Gb  Can.o [3]
+Can_pCurrentConfig      0x1fff'848c    0x4  Data  Gb  Can.o [3]
+Can_schm_read_msr            0x1c35    0x6  Code  Gb  SchM_Can.o [15]
+Can_u32BaseAddress           0x69d4    0xc  Data  Gb  Can_Flexcan.o [3]
+Can_u32TicksDelayDuration
+                        0x1fff'88c8    0x4  Data  Gb  Can_Flexcan.o [3]
+ControlerDescriptors0_PB
+                             0x69f8    0xc  Data  Lc  Can_PBcfg.o [2]
+ControlerDescriptors0_PC
+                             0x6978   0x14  Data  Lc  Can_Cfg.o [2]
+ControllerBaudrateCfgSet0_PB_0
+                             0x69ec    0xc  Data  Lc  Can_PBcfg.o [2]
+ControllerBaudrateCfgSet0_PC_0
+                             0x6a68    0x4  Data  Lc  Can_Cfg.o [2]
+DMA0_IRQHandler              0x6a79         Code  Wk  startup_S32K144.o [16]
+DMA10_IRQHandler             0x6a79         Code  Wk  startup_S32K144.o [16]
+DMA11_IRQHandler             0x6a79         Code  Wk  startup_S32K144.o [16]
+DMA12_IRQHandler             0x6a79         Code  Wk  startup_S32K144.o [16]
+DMA13_IRQHandler             0x6a79         Code  Wk  startup_S32K144.o [16]
+DMA14_IRQHandler             0x6a79         Code  Wk  startup_S32K144.o [16]
+DMA15_IRQHandler             0x6a79         Code  Wk  startup_S32K144.o [16]
+DMA1_IRQHandler              0x6a79         Code  Wk  startup_S32K144.o [16]
+DMA2_IRQHandler              0x6a79         Code  Wk  startup_S32K144.o [16]
+DMA3_IRQHandler              0x6a79         Code  Wk  startup_S32K144.o [16]
+DMA4_IRQHandler              0x6a79         Code  Wk  startup_S32K144.o [16]
+DMA5_IRQHandler              0x6a79         Code  Wk  startup_S32K144.o [16]
+DMA6_IRQHandler              0x6a79         Code  Wk  startup_S32K144.o [16]
+DMA7_IRQHandler              0x6a79         Code  Wk  startup_S32K144.o [16]
+DMA8_IRQHandler              0x6a79         Code  Wk  startup_S32K144.o [16]
+DMA9_IRQHandler              0x6a79         Code  Wk  startup_S32K144.o [16]
+DMA_Error_IRQHandler         0x6a79         Code  Wk  startup_S32K144.o [16]
+DebugMon_Handler             0x5c53         Code  Wk  startup_S32K144.o [16]
+DefaultISR                   0x6a79         Code  Wk  startup_S32K144.o [16]
+Det_ApiId               0x1fff'8734    0x8  Data  Gb  Det.o [6]
+Det_ErrorId             0x1fff'873c    0x8  Data  Gb  Det.o [6]
+Det_InstanceId          0x1fff'872c    0x8  Data  Gb  Det.o [6]
+Det_ModuleId            0x1fff'86c8   0x10  Data  Gb  Det.o [6]
+Det_OverflowEvent       0x1fff'88d2    0x1  Data  Gb  Det.o [6]
+Det_ReportError              0x1eb9   0x72  Code  Gb  Det.o [6]
+Det_ReportRuntimeError       0x1f2b   0x72  Code  Gb  Det.o [6]
+Det_RuntimeApiId        0x1fff'874c    0x8  Data  Gb  Det.o [6]
+Det_RuntimeErrorId      0x1fff'8754    0x8  Data  Gb  Det.o [6]
+Det_RuntimeInstanceId   0x1fff'8744    0x8  Data  Gb  Det.o [6]
+Det_RuntimeModuleId     0x1fff'86d8   0x10  Data  Gb  Det.o [6]
+Det_RuntimeOverflowEvent
+                        0x1fff'88d3    0x1  Data  Gb  Det.o [6]
+Det_numEventErrors      0x1fff'8780    0x4  Data  Gb  Det.o [6]
+Det_numRuntimeEventErrors
+                        0x1fff'8784    0x4  Data  Gb  Det.o [6]
+Dio_Gpio_WriteChannel        0x20a5   0x3a  Code  Gb  Dio_Gpio.o [7]
+Dio_WriteChannel             0x202f    0xc  Code  Gb  Dio.o [7]
+Distance                0x1fff'878c    0x4  Data  Gb  main.o [1]
+ERM_double_fault_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+ERM_single_fault_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+EcuM_CheckWakeup             0x39d9    0x2  Code  Gb  EcuM.o [8]
+FIRC_ClockConfigPB0_0        0x691c   0x18  Data  Lc  Mcu_PBcfg.o [2]
+FLEXIO_IRQHandler            0x6a79         Code  Wk  startup_S32K144.o [16]
+FTFC_Fault_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+FTFC_IRQHandler              0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM0_Ch0_Ch1_IRQHandler
+                             0x6661    0xa  Code  Gb  IT_Handler.o [17]
+FTM0_Ch2_Ch3_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM0_Ch4_Ch5_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM0_Ch6_Ch7_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM0_Fault_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM0_Ovf_Reload_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM1_Ch0_Ch1_IRQHandler
+                             0x666b    0xa  Code  Gb  IT_Handler.o [17]
+FTM1_Ch2_Ch3_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM1_Ch4_Ch5_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM1_Ch6_Ch7_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM1_Fault_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM1_Ovf_Reload_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM2_Ch0_Ch1_IRQHandler
+                             0x6675    0xa  Code  Gb  IT_Handler.o [17]
+FTM2_Ch2_Ch3_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM2_Ch4_Ch5_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM2_Ch6_Ch7_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM2_Fault_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM2_Ovf_Reload_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM3_Ch0_Ch1_IRQHandler
+                             0x667f    0xa  Code  Gb  IT_Handler.o [17]
+FTM3_Ch2_Ch3_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM3_Ch4_Ch5_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM3_Ch6_Ch7_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM3_Fault_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM3_Ovf_Reload_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+FTM_BASE_ADDR32              0x6808   0x20  Data  Gb  Ftm_Common.o [11]
+GetCounterValue              0x1eb1    0x4  Code  Gb  Os_counter_api.o [13]
+GetElapsedValue              0x1eb5    0x4  Code  Gb  Os_counter_api.o [13]
+Gpt_Config                   0x670c   0x30  Data  Gb  Gpt_PBcfg.o [2]
+Gpt_EnableNotification       0x4587   0x54  Code  Gb  Gpt.o [9]
+Gpt_Ftm_GetTimeElapsed       0x4b15   0xa0  Code  Gb  Gpt_Ftm.o [9]
+Gpt_Ftm_Init                 0x481f  0x1d2  Code  Gb  Gpt_Ftm.o [9]
+Gpt_Ftm_ProcessCommonInterrupt
+                             0x4735   0xea  Code  Gb  Gpt_Ftm.o [9]
+Gpt_Ftm_StartTimer           0x49f1   0xb6  Code  Gb  Gpt_Ftm.o [9]
+Gpt_Ftm_StopTimer            0x4aa7   0x6e  Code  Gb  Gpt_Ftm.o [9]
+Gpt_Ftm_u32TargetValue  0x1fff'8000  0x200  Data  Lc  Gpt_Ftm.o [9]
+Gpt_GetTimeElapsed           0x43e5   0x8a  Code  Gb  Gpt.o [9]
+Gpt_Init                     0x4355   0x90  Code  Gb  Gpt.o [9]
+Gpt_InitChannelPB            0x659c   0x70  Data  Lc  Gpt_PBcfg.o [2]
+Gpt_Interrupt_Init           0x6355    0xe  Code  Gb  IT_Controller.o [17]
+Gpt_Ipw_EnableInterrupt
+                             0x4721   0x12  Code  Gb  Gpt_Ipw.o [9]
+Gpt_Ipw_GetTimeElapsed       0x46b5   0x2c  Code  Gb  Gpt_Ipw.o [9]
+Gpt_Ipw_Init                 0x468d   0x28  Code  Gb  Gpt_Ipw.o [9]
+Gpt_Ipw_StartTimer           0x46e1   0x20  Code  Gb  Gpt_Ipw.o [9]
+Gpt_Ipw_StopTimer            0x4701   0x20  Code  Gb  Gpt_Ipw.o [9]
+Gpt_LPit_EnableInterrupt
+                             0x4e1d   0x48  Code  Gb  Gpt_LPit.o [9]
+Gpt_LPit_GetTimeElapsed
+                             0x4dc1   0x5c  Code  Gb  Gpt_LPit.o [9]
+Gpt_LPit_Init                0x4bc1  0x126  Code  Gb  Gpt_LPit.o [9]
+Gpt_LPit_StartTimer          0x4ce7   0x84  Code  Gb  Gpt_LPit.o [9]
+Gpt_LPit_StopTimer           0x4d6b   0x56  Code  Gb  Gpt_LPit.o [9]
+Gpt_NotificationFTM3_CH0
+                             0x627f    0xa  Code  Gb  main.o [1]
+Gpt_ProcessCommonInterrupt
+                             0x45db   0xa0  Code  Gb  Gpt.o [9]
+Gpt_StartTimer               0x446f   0x7e  Code  Gb  Gpt.o [9]
+Gpt_StopTimer                0x44ed   0x9a  Code  Gb  Gpt.o [9]
+Gpt_ValidateChannelCall
+                             0x41a5   0x3e  Code  Lc  Gpt.o [9]
+Gpt_ValidateChannelNotification
+                             0x422b   0x34  Code  Lc  Gpt.o [9]
+Gpt_ValidateChannelStatus
+                             0x425f   0xa2  Code  Lc  Gpt.o [9]
+Gpt_ValidateGlobalCall       0x41e3   0x48  Code  Lc  Gpt.o [9]
+Gpt_ValidateParamPtrInit
+                             0x4337   0x1e  Code  Lc  Gpt.o [9]
+Gpt_ValidateParamValue       0x4301   0x36  Code  Lc  Gpt.o [9]
+Gpt_aChannelInfo        0x1fff'86e8   0x10  Data  Lc  Gpt.o [9]
+Gpt_aStopTime           0x1fff'86f8   0x10  Data  Lc  Gpt.o [9]
+Gpt_eMode               0x1fff'84b6    0x1  Data  Lc  Gpt.o [9]
+Gpt_pConfig             0x1fff'849c    0x4  Data  Lc  Gpt.o [9]
+Gpt_schm_read_msr            0x4e69    0x6  Code  Gb  SchM_Gpt.o [15]
+HardFault_Handler            0x20a3         Code  Wk  startup_S32K144.o [16]
+ICU_PORT_CI_BASE_ADDR32
+                             0x6964   0x14  Data  Gb  Icu_Port_Ci.o [10]
+IcuNotification_FTM0_CH0
+                             0x6289    0x2  Code  Gb  main.o [1]
+IcuNotification_FTM1_CH0
+                             0x628b    0xe  Code  Gb  main.o [1]
+IcuNotification_FTM2_CH0
+                             0x62b5    0x2  Code  Gb  main.o [1]
+Icu_CallNotification         0x3531   0x38  Code  Lc  Icu.o [10]
+Icu_ClearBitChState          0x3411   0x22  Code  Lc  Icu.o [10]
+Icu_Config                   0x6828   0x20  Data  Gb  Icu_PBcfg.o [2]
+Icu_CurrentMode         0x1fff'88d4    0x1  Data  Gb  Icu.o [10]
+Icu_EnableEdgeDetection
+                             0x361d   0x3e  Code  Gb  Icu.o [10]
+Icu_EnableNotification       0x35ed   0x30  Code  Gb  Icu.o [10]
+Icu_EndValidateGlobalCall
+                             0x3475   0x20  Code  Lc  Icu.o [10]
+Icu_FtmIcu_IpConfig_PB       0x6a04    0xc  Data  Gb  Icu_PBcfg.o [2]
+Icu_Ftm_ChannelConfig_PB
+                             0x6794   0x24  Data  Gb  Icu_PBcfg.o [2]
+Icu_Ftm_ClearChConfig        0x210d   0x26  Code  Lc  Icu_Ftm.o [10]
+Icu_Ftm_ClearInterruptFlags
+                             0x21d1   0x54  Code  Lc  Icu_Ftm.o [10]
+Icu_Ftm_ClearStatusFlags
+                             0x2175   0x5c  Code  Lc  Icu_Ftm.o [10]
+Icu_Ftm_EnableEdgeDetection
+                             0x29a7   0x5e  Code  Gb  Icu_Ftm.o [10]
+Icu_Ftm_GetChConfig          0x2133   0x12  Code  Lc  Icu_Ftm.o [10]
+Icu_Ftm_GetOverflow          0x2a6d   0x44  Code  Gb  Icu_Ftm.o [10]
+Icu_Ftm_GetStatusFlags       0x2145   0x30  Code  Lc  Icu_Ftm.o [10]
+Icu_Ftm_GlobalConfiguration
+                             0x2b73   0xf0  Code  Gb  Icu_Ftm.o [10]
+Icu_Ftm_GlobalConfiguration_PB
+                             0x6a34    0x8  Data  Gb  Icu_PBcfg.o [2]
+Icu_Ftm_Init                 0x2683  0x2bc  Code  Gb  Icu_Ftm.o [10]
+Icu_Ftm_ProcessInterrupt
+                             0x2ab9   0xba  Code  Gb  Icu_Ftm.o [10]
+Icu_Ftm_SetActivationCondition
+                             0x293f   0x68  Code  Gb  Icu_Ftm.o [10]
+Icu_Ftm_SetChConfig          0x20e9   0x24  Code  Lc  Icu_Ftm.o [10]
+Icu_Ftm_SignalMeasurement
+                             0x2305  0x37e  Code  Lc  Icu_Ftm.o [10]
+Icu_Ftm_StartChannel         0x2225   0x56  Code  Lc  Icu_Ftm.o [10]
+Icu_Ftm_StopChannel          0x227b   0x44  Code  Lc  Icu_Ftm.o [10]
+Icu_Ftm_StopTimestamp        0x2a05   0x58  Code  Gb  Icu_Ftm.o [10]
+Icu_Ftm_Timestamp            0x22bf   0x46  Code  Lc  Icu_Ftm.o [10]
+Icu_Ftm_aBufferPtr      0x1fff'84bc  0x100  Data  Lc  Icu_Ftm.o [10]
+Icu_Ftm_aChConfig       0x1fff'82a0   0x80  Data  Lc  Icu_Ftm.o [10]
+Icu_Ftm_u16ActivationPulseTemp
+                        0x1fff'83a0   0x80  Data  Lc  Icu_Ftm.o [10]
+Icu_Ftm_u16EdgeNumbers  0x1fff'8320   0x80  Data  Lc  Icu_Ftm.o [10]
+Icu_Ftm_u8FirstEdge     0x1fff'8420   0x40  Data  Lc  Icu_Ftm.o [10]
+Icu_GetBitChState            0x3401   0x10  Code  Lc  Icu.o [10]
+Icu_Init                     0x3569   0x84  Code  Gb  Icu.o [10]
+Icu_InitChannel_PB           0x673c   0x30  Data  Gb  Icu_PBcfg.o [2]
+Icu_InitHWMap_PB             0x58dc  0x1cc  Data  Gb  Icu_PBcfg.o [2]
+Icu_Interrupt_Init           0x6363   0x1e  Code  Gb  IT_Controller.o [17]
+Icu_IpChannelConfig_PB       0x6a3c    0x8  Data  Gb  Icu_PBcfg.o [2]
+Icu_Ipw_EnableEdgeDetection
+                             0x3929   0xae  Code  Gb  Icu_Ipw.o [10]
+Icu_Ipw_Init                 0x38a1   0x36  Code  Gb  Icu_Ipw.o [10]
+Icu_Ipw_StopTimestamp        0x38d7   0x52  Code  Gb  Icu_Ipw.o [10]
+Icu_LPit_ClearChConfig       0x3d57   0x14  Code  Lc  Icu_LPit.o [10]
+Icu_LPit_DisableInterrupt
+                             0x3cfb   0x4a  Code  Lc  Icu_LPit.o [10]
+Icu_LPit_EnableEdgeDetection
+                             0x3fab   0x18  Code  Gb  Icu_LPit.o [10]
+Icu_LPit_EnableInterrupt
+                             0x3cb1   0x4a  Code  Lc  Icu_LPit.o [10]
+Icu_LPit_Init                0x3d6b  0x240  Code  Gb  Icu_LPit.o [10]
+Icu_LPit_SetChConfig         0x3d45   0x12  Code  Lc  Icu_LPit.o [10]
+Icu_LPit_StopTimestamp       0x3fc3   0x18  Code  Gb  Icu_LPit.o [10]
+Icu_LPit_aChConfig      0x1fff'84a4    0x4  Data  Lc  Icu_LPit.o [10]
+Icu_Lptmr_ClearChConfig
+                             0x4027   0x20  Code  Lc  Icu_Lptmr.o [10]
+Icu_Lptmr_EnableEdgeDetection
+                             0x4181   0x14  Code  Gb  Icu_Lptmr.o [10]
+Icu_Lptmr_EnableInterrupt
+                             0x3fe5   0x24  Code  Lc  Icu_Lptmr.o [10]
+Icu_Lptmr_Init               0x4047  0x10c  Code  Gb  Icu_Lptmr.o [10]
+Icu_Lptmr_SetActivationCondition
+                             0x4153   0x2e  Code  Gb  Icu_Lptmr.o [10]
+Icu_Lptmr_SetChConfig        0x4009   0x1e  Code  Lc  Icu_Lptmr.o [10]
+Icu_Lptmr_aChConfig     0x1fff'84b8    0x1  Data  Lc  Icu_Lptmr.o [10]
+Icu_Port_Ci_DisableInterrupt
+                             0x3ae9   0x4e  Code  Lc  Icu_Port_Ci.o [10]
+Icu_Port_Ci_EnableEdgeDetection
+                             0x3c9b    0xa  Code  Gb  Icu_Port_Ci.o [10]
+Icu_Port_Ci_EnableInterrupt
+                             0x39dd  0x10c  Code  Lc  Icu_Port_Ci.o [10]
+Icu_Port_Ci_Init             0x3b37   0x62  Code  Gb  Icu_Port_Ci.o [10]
+Icu_Port_Ci_SetActivationCondition
+                             0x3b99  0x102  Code  Gb  Icu_Port_Ci.o [10]
+Icu_Port_Ci_aChActivationMode
+                        0x1fff'8200   0xa0  Data  Lc  Icu_Port_Ci.o [10]
+Icu_Port_Ci_u32PortInit
+                        0x1fff'8460   0x2c  Data  Lc  Icu_Port_Ci.o [10]
+Icu_ReportEvents             0x36c7   0x34  Code  Gb  Icu.o [10]
+Icu_ReportWakeupAndOverflow
+                             0x365b   0x6c  Code  Gb  Icu.o [10]
+Icu_SetBitChState            0x33e1   0x20  Code  Lc  Icu.o [10]
+Icu_SignalMeasurement        0x382d   0x52  Code  Gb  Icu.o [10]
+Icu_Timestamp                0x370d  0x11c  Code  Gb  Icu.o [10]
+Icu_ValidateCallAndChannel
+                             0x3495   0x5a  Code  Lc  Icu.o [10]
+Icu_ValidateGlobalCall       0x3433   0x42  Code  Lc  Icu.o [10]
+Icu_ValidateModeForSetUpFeature
+                             0x350b   0x26  Code  Lc  Icu.o [10]
+Icu_ValidatePtrInit          0x34ef   0x1c  Code  Lc  Icu.o [10]
+Icu_aActivePulseWidth   0x1fff'8720    0xc  Data  Lc  Icu.o [10]
+Icu_aBuffer             0x1fff'8708    0xc  Data  Gb  Icu.o [10]
+Icu_aBufferIndex        0x1fff'8774    0x8  Data  Gb  Icu.o [10]
+Icu_aBufferNotify       0x1fff'8764    0x8  Data  Gb  Icu.o [10]
+Icu_aBufferSize         0x1fff'875c    0x8  Data  Gb  Icu.o [10]
+Icu_aChannelState       0x1fff'88cc    0x4  Data  Gb  Icu.o [10]
+Icu_aNotifyCount        0x1fff'876c    0x8  Data  Gb  Icu.o [10]
+Icu_aPeriod             0x1fff'8714    0xc  Data  Lc  Icu.o [10]
+Icu_eGlobalState        0x1fff'84b7    0x1  Data  Lc  Icu.o [10]
+Icu_pCfgPtr             0x1fff'84a0    0x4  Data  Gb  Icu.o [10]
+Icu_schm_read_msr            0x2c6d    0x6  Code  Gb  SchM_Icu.o [15]
+LPI2C0_Master_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+LPI2C0_Slave_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+LPIT0_Ch0_IRQHandler         0x6a79         Code  Wk  startup_S32K144.o [16]
+LPIT0_Ch1_IRQHandler         0x6a79         Code  Wk  startup_S32K144.o [16]
+LPIT0_Ch2_IRQHandler         0x6a79         Code  Wk  startup_S32K144.o [16]
+LPIT0_Ch3_IRQHandler         0x6a79         Code  Wk  startup_S32K144.o [16]
+LPIT_BASE_ADDR32             0x6a64    0x4  Data  Gb  LPit_Common.o [11]
+LPSPI0_IRQHandler            0x6a79         Code  Wk  startup_S32K144.o [16]
+LPSPI1_IRQHandler            0x6a79         Code  Wk  startup_S32K144.o [16]
+LPSPI2_IRQHandler            0x6a79         Code  Wk  startup_S32K144.o [16]
+LPTMR0_IRQHandler            0x6a79         Code  Wk  startup_S32K144.o [16]
+LPUART0_RxTx_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+LPUART1_RxTx_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+LPUART2_RxTx_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+LVD_LVW_IRQHandler           0x6a79         Code  Wk  startup_S32K144.o [16]
+MCM_IRQHandler               0x6a79         Code  Wk  startup_S32K144.o [16]
+Mcu_ClockConfigPB0           0x69a0   0x14  Data  Lc  Mcu_PBcfg.o [2]
+Mcu_Config                   0x6934   0x18  Data  Gb  Mcu_PBcfg.o [2]
+Mcu_HwIPsConfigPB0           0x69b4   0x10  Data  Lc  Mcu_PBcfg.o [2]
+Mcu_Init                     0x62b9   0x48  Code  Gb  Mcu.o [12]
+Mcu_InitClock                0x6301   0x1e  Code  Gb  Mcu.o [12]
+Mcu_Ipw_Init                 0x5ed9   0x1e  Code  Gb  Mcu_IPW.o [12]
+Mcu_Ipw_InitClock            0x5ef7   0xbe  Code  Gb  Mcu_IPW.o [12]
+Mcu_Mode_ConfigPB0           0x6a44    0x8  Data  Lc  Mcu_PBcfg.o [2]
+Mcu_PCC_PeripheralConfig
+                             0x60f1   0x68  Code  Gb  Mcu_PCC.o [12]
+Mcu_PMC_PowerInit            0x60bd   0x24  Code  Gb  Mcu_PMC.o [12]
+Mcu_RCM_GetCurrentSystemResetIsrSettings
+                             0x6093    0xc  Code  Gb  Mcu_RCM.o [12]
+Mcu_RCM_ResetInit            0x6079   0x1a  Code  Gb  Mcu_RCM.o [12]
+Mcu_RCM_RestoreSystemResetIsrConfig
+                             0x60a7    0xc  Code  Gb  Mcu_RCM.o [12]
+Mcu_RCM_SystemResetIsrConfig
+                             0x609f    0x8  Code  Gb  Mcu_RCM.o [12]
+Mcu_SCG_DisableSpllClock
+                             0x5653    0xc  Code  Gb  Mcu_SCG.o [12]
+Mcu_SCG_DropSystemClockToTrustedClock
+                             0x5427   0xd4  Code  Gb  Mcu_SCG.o [12]
+Mcu_SCG_FircInit             0x55a1   0x48  Code  Gb  Mcu_SCG.o [12]
+Mcu_SCG_GetCurrentPLLClockMonitorConfig
+                             0x563b    0xa  Code  Gb  Mcu_SCG.o [12]
+Mcu_SCG_PrepareSpllBeforeSoscInit
+                             0x5625   0x16  Code  Gb  Mcu_SCG.o [12]
+Mcu_SCG_RestorePLLClockMonitorConfig
+                             0x5645    0xe  Code  Gb  Mcu_SCG.o [12]
+Mcu_SCG_SircInit             0x5557   0x4a  Code  Gb  Mcu_SCG.o [12]
+Mcu_SCG_SoscInit             0x54fb   0x5c  Code  Gb  Mcu_SCG.o [12]
+Mcu_SCG_SpllInit             0x55e9   0x3c  Code  Gb  Mcu_SCG.o [12]
+Mcu_SCG_SystemClockInit
+                             0x53a9   0x7e  Code  Gb  Mcu_SCG.o [12]
+Mcu_SIM_ClockConfig          0x6007   0x3c  Code  Gb  Mcu_SIM.o [12]
+Mcu_SIM_Init                 0x5fb9   0x4e  Code  Gb  Mcu_SIM.o [12]
+Mcu_SMC_AllowedModesConfig
+                             0x60e1    0xc  Code  Gb  Mcu_SMC.o [12]
+Mcu_au8ClockConfigIds   0x1fff'88d5    0x1  Data  Lc  Mcu.o [12]
+Mcu_au8ModeConfigIds    0x1fff'88d6    0x1  Data  Lc  Mcu.o [12]
+Mcu_pClockConfig        0x1fff'84ac    0x4  Data  Lc  Mcu_IPW.o [12]
+Mcu_pConfigPtr          0x1fff'84a8    0x4  Data  Gb  Mcu.o [12]
+MemManage_Handler            0x39d7         Code  Wk  startup_S32K144.o [16]
+MessageBufferConfigs0_PB
+                             0x669c   0x38  Data  Lc  Can_PBcfg.o [2]
+NMI_Handler                  0x203b         Code  Wk  startup_S32K144.o [16]
+PCC_ClockConfigPB0_0         0x6a4c    0x8  Data  Lc  Mcu_PBcfg.o [2]
+PCC_aRegistersConfigPB0_0
+                             0x5dd8  0x100  Data  Lc  Mcu_PBcfg.o [2]
+PDB0_IRQHandler              0x6a79         Code  Wk  startup_S32K144.o [16]
+PDB1_IRQHandler              0x6a79         Code  Wk  startup_S32K144.o [16]
+PMC_ConfigPB0                0x6a70    0x4  Data  Lc  Mcu_PBcfg.o [2]
+PORTA_IRQHandler             0x6a79         Code  Wk  startup_S32K144.o [16]
+PORTB_IRQHandler             0x6a79         Code  Wk  startup_S32K144.o [16]
+PORTC_IRQHandler             0x6a79         Code  Wk  startup_S32K144.o [16]
+PORTD_IRQHandler             0x6a79         Code  Wk  startup_S32K144.o [16]
+PORTE_IRQHandler             0x6a79         Code  Wk  startup_S32K144.o [16]
+PendSV_Handler               0x62b7         Code  Wk  startup_S32K144.o [16]
+Port_Config                  0x694c   0x18  Data  Gb  Port_PBcfg.o [2]
+Port_Init                    0x632d   0x22  Code  Gb  Port.o [14]
+Port_Port_Ci_Init            0x52f5   0x92  Code  Gb  Port_Port_Ci.o [14]
+Port_Port_Ci_Init_ConfiguredPins
+                             0x5195  0x160  Code  Lc  Port_Port_Ci.o [14]
+Port_Port_Ci_Init_UnusedPins
+                             0x5051  0x144  Code  Lc  Port_Port_Ci.o [14]
+Port_Port_Ci_au16GpioDirChangeability
+                        0x1fff'86b4   0x14  Data  Lc  Port_Port_Ci.o [14]
+Port_UnUsedPin               0x6a5c    0x8  Data  Lc  Port_PBcfg.o [2]
+Port_aPinConfigDefault       0x6158   0xb0  Data  Lc  Port_PBcfg.o [2]
+Port_au16NoUnUsedPadsArrayDefault
+                             0x6508   0x94  Data  Lc  Port_PBcfg.o [2]
+Port_pConfig            0x1fff'84b0    0x4  Data  Gb  Port.o [14]
+RCM_IRQHandler               0x6a79         Code  Wk  startup_S32K144.o [16]
+RCM_ResetConfigPB0           0x6a54    0x8  Data  Lc  Mcu_PBcfg.o [2]
+RTC_IRQHandler               0x6a79         Code  Wk  startup_S32K144.o [16]
+RTC_Seconds_IRQHandler       0x6a79         Code  Wk  startup_S32K144.o [16]
+Read_Collision_IRQHandler
+                             0x6a79         Code  Wk  startup_S32K144.o [16]
+Region$$Table$$Base          0x67dc          --   Gb  - Linker created -
+Region$$Table$$Limit         0x6808          --   Gb  - Linker created -
+Reserved100_IRQHandler       0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved103_IRQHandler       0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved105_IRQHandler       0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved106_IRQHandler       0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved107_IRQHandler       0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved110_IRQHandler       0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved112_IRQHandler       0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved113_IRQHandler       0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved114_IRQHandler       0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved45_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved46_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved48_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved50_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved52_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved53_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved54_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved58_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved59_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved69_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved70_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved71_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved72_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved81_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved82_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved83_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved86_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved87_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved88_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved89_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved90_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved91_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved92_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved93_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reserved99_IRQHandler        0x6a79         Code  Wk  startup_S32K144.o [16]
+Reset_Handler                0x69c5         Code  Wk  startup_S32K144.o [16]
+Rx_Id                   0x1fff'877c    0x4  Data  Gb  CanIf.o [4]
+Rxbuffer                0x1fff'8674   0x40  Data  Gb  CanIf.o [4]
+SCG_ClockConfigPB0_0         0x6848   0x20  Data  Lc  Mcu_PBcfg.o [2]
+SCG_IRQHandler               0x6a79         Code  Wk  startup_S32K144.o [16]
+SIM_ClockConfigPB0_0         0x6a10    0xc  Data  Lc  Mcu_PBcfg.o [2]
+SIM_ConfigPB0                0x689c   0x1c  Data  Lc  Mcu_PBcfg.o [2]
+SIRC_ClockConfigPB0_0        0x6904   0x18  Data  Lc  Mcu_PBcfg.o [2]
+SMC_ConfigPB0                0x6a74    0x4  Data  Lc  Mcu_PBcfg.o [2]
+SOSC_ClockConfigPB0_0        0x68ec   0x18  Data  Lc  Mcu_PBcfg.o [2]
+SVC_Handler                  0x58db         Code  Wk  startup_S32K144.o [16]
+SWI_IRQHandler               0x6a79         Code  Wk  startup_S32K144.o [16]
+SchM_Enter_Can_CAN_EXCLUSIVE_AREA_03
+                             0x1c3d   0x26  Code  Gb  SchM_Can.o [15]
+SchM_Enter_Can_CAN_EXCLUSIVE_AREA_04
+                             0x1c65   0x26  Code  Gb  SchM_Can.o [15]
+SchM_Enter_Can_CAN_EXCLUSIVE_AREA_05
+                             0x1c8d   0x26  Code  Gb  SchM_Can.o [15]
+SchM_Enter_Can_CAN_EXCLUSIVE_AREA_06
+                             0x1cb5   0x26  Code  Gb  SchM_Can.o [15]
+SchM_Enter_Can_CAN_EXCLUSIVE_AREA_07
+                             0x1cdd   0x26  Code  Gb  SchM_Can.o [15]
+SchM_Enter_Can_CAN_EXCLUSIVE_AREA_08
+                             0x1d05   0x26  Code  Gb  SchM_Can.o [15]
+SchM_Enter_Can_CAN_EXCLUSIVE_AREA_09
+                             0x1d2d   0x26  Code  Gb  SchM_Can.o [15]
+SchM_Enter_Can_CAN_EXCLUSIVE_AREA_13
+                             0x1d55   0x26  Code  Gb  SchM_Can.o [15]
+SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_08
+                             0x4e71   0x26  Code  Gb  SchM_Gpt.o [15]
+SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_14
+                             0x4e99   0x26  Code  Gb  SchM_Gpt.o [15]
+SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_15
+                             0x4ec1   0x26  Code  Gb  SchM_Gpt.o [15]
+SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_17
+                             0x4ee9   0x26  Code  Gb  SchM_Gpt.o [15]
+SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_18
+                             0x4f11   0x26  Code  Gb  SchM_Gpt.o [15]
+SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_19
+                             0x4f39   0x26  Code  Gb  SchM_Gpt.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_00
+                             0x2c75   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_01
+                             0x2c9d   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_04
+                             0x2cc5   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_07
+                             0x2ced   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_11
+                             0x2d15   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_12
+                             0x2d3d   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_16
+                             0x2d65   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_19
+                             0x2d8d   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_21
+                             0x2db5   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_22
+                             0x2ddd   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_23
+                             0x2e05   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_25
+                             0x2e2d   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_26
+                             0x2e55   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_30
+                             0x2e7d   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_31
+                             0x2ea5   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_32
+                             0x2ecd   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_34
+                             0x2ef5   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_35
+                             0x2f1d   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_36
+                             0x2f45   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_60
+                             0x2f6d   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_61
+                             0x2f95   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_62
+                             0x2fc1   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_63
+                             0x2fed   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Enter_Icu_ICU_EXCLUSIVE_AREA_64
+                             0x3015   0x26  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Can_CAN_EXCLUSIVE_AREA_03
+                             0x1d7d   0x1e  Code  Gb  SchM_Can.o [15]
+SchM_Exit_Can_CAN_EXCLUSIVE_AREA_04
+                             0x1d9d   0x1e  Code  Gb  SchM_Can.o [15]
+SchM_Exit_Can_CAN_EXCLUSIVE_AREA_05
+                             0x1dbd   0x1e  Code  Gb  SchM_Can.o [15]
+SchM_Exit_Can_CAN_EXCLUSIVE_AREA_06
+                             0x1ddd   0x1e  Code  Gb  SchM_Can.o [15]
+SchM_Exit_Can_CAN_EXCLUSIVE_AREA_07
+                             0x1dfd   0x1e  Code  Gb  SchM_Can.o [15]
+SchM_Exit_Can_CAN_EXCLUSIVE_AREA_08
+                             0x1e1d   0x1a  Code  Gb  SchM_Can.o [15]
+SchM_Exit_Can_CAN_EXCLUSIVE_AREA_09
+                             0x1e39   0x1a  Code  Gb  SchM_Can.o [15]
+SchM_Exit_Can_CAN_EXCLUSIVE_AREA_13
+                             0x1e55   0x1a  Code  Gb  SchM_Can.o [15]
+SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_08
+                             0x4f65   0x1c  Code  Gb  SchM_Gpt.o [15]
+SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_14
+                             0x4f89   0x1c  Code  Gb  SchM_Gpt.o [15]
+SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_15
+                             0x4fa9   0x1c  Code  Gb  SchM_Gpt.o [15]
+SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_17
+                             0x4fd1   0x1c  Code  Gb  SchM_Gpt.o [15]
+SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_18
+                             0x4fed   0x1c  Code  Gb  SchM_Gpt.o [15]
+SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_19
+                             0x5009   0x1c  Code  Gb  SchM_Gpt.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_00
+                             0x303d   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_01
+                             0x305d   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_04
+                             0x307d   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_07
+                             0x3099   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_11
+                             0x30c5   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_12
+                             0x30e1   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_16
+                             0x3109   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_19
+                             0x312d   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_21
+                             0x3159   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_22
+                             0x3175   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_23
+                             0x3195   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_25
+                             0x31b9   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_26
+                             0x31d5   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_30
+                             0x3201   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_31
+                             0x3225   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_32
+                             0x3245   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_34
+                             0x326d   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_35
+                             0x3291   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_36
+                             0x32ad   0x1c  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_60
+                             0x32e1   0x1a  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_61
+                             0x3301   0x1a  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_62
+                             0x3321   0x1a  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_63
+                             0x3341   0x1a  Code  Gb  SchM_Icu.o [15]
+SchM_Exit_Icu_ICU_EXCLUSIVE_AREA_64
+                             0x3361   0x1a  Code  Gb  SchM_Icu.o [15]
+SysTick_Handler              0x6689   0x10  Code  Gb  IT_Handler.o [17]
+SystemInit                   0x660d   0x34  Code  Gb  system_S32K144.o [16]
+TimeDelay               0x1fff'8788    0x4  Data  Gb  IT_Controller.o [17]
+UltraSonic_Read              0x63a3   0x5c  Code  Gb  Ultrasonic.o [17]
+UltraSonic_Read::distanceCalculated
+                        0x1fff'88c4    0x4  Data  Lc  Ultrasonic.o [17]
+UltraSonic_Read::elapsedTime
+                        0x1fff'88c0    0x4  Data  Lc  Ultrasonic.o [17]
+UltraSonic_Send              0x6389   0x1a  Code  Gb  Ultrasonic.o [17]
+UsageFault_Handler           0x4733         Code  Wk  startup_S32K144.o [16]
+WDOG_EWM_IRQHandler          0x6a79         Code  Wk  startup_S32K144.o [16]
+__aeabi_d2uiz                0x6431         Code  Gb  DblToU32.o [19]
+__aeabi_ddiv                 0x5695         Code  Gb  DblDiv.o [19]
+__aeabi_dmul                 0x5aa9         Code  Gb  DblMul.o [19]
+__aeabi_memset               0x203d         Code  Gb  ABImemset.o [20]
+__aeabi_ui2d                 0x6415         Code  Gb  U32ToDbl.o [19]
+__cmain                      0x6869         Code  Gb  cmain.o [20]
+__exit                       0x64fd         Code  Gb  XXexit.o [20]
+__iar_Memset                 0x203d         Code  Gb  ABImemset.o [20]
+__iar_Memset_word            0x2045         Code  Gb  ABImemset.o [20]
+__iar_data_init3             0x676d   0x28  Code  Gb  data_init.o [20]
+__iar_init_vfp               0x67b9         Code  Gb  fpinit_M.o [19]
+__iar_packbits_init3         0x6453   0xa2  Code  Gb  packbits_init.o [20]
+__iar_program_start          0x68b9         Code  Gb  cstartup_M.o [20]
+__iar_zero_init3             0x66d5   0x38  Code  Gb  zero_init3.o [20]
+__low_level_init             0x6887    0x4  Code  Gb  low_level_init.o [18]
+__vector_table                  0x0         Data  Gb  startup_S32K144.o [16]
+_call_main                   0x6875         Code  Gb  cmain.o [20]
+_exit                        0x6891         Code  Gb  cexit.o [20]
+abort                        0x64f5    0x6  Code  Gb  abort.o [18]
+exit                         0x688b    0x4  Code  Gb  exit.o [18]
+firstCapture            0x1fff'84b4    0x1  Data  Gb  Ultrasonic.o [17]
+main                         0x6209   0x76  Code  Gb  main.o [1]
+memset                       0x201b   0x14  Code  Gb  memset.o [20]
+msr_00                  0x1fff'8800    0x4  Data  Lc  SchM_Icu.o [15]
+msr_01                  0x1fff'8804    0x4  Data  Lc  SchM_Icu.o [15]
+msr_03                  0x1fff'8790    0x4  Data  Lc  SchM_Can.o [15]
+msr_04                  0x1fff'8794    0x4  Data  Lc  SchM_Can.o [15]
+msr_04                  0x1fff'8808    0x4  Data  Lc  SchM_Icu.o [15]
+msr_05                  0x1fff'8798    0x4  Data  Lc  SchM_Can.o [15]
+msr_06                  0x1fff'879c    0x4  Data  Lc  SchM_Can.o [15]
+msr_07                  0x1fff'87a0    0x4  Data  Lc  SchM_Can.o [15]
+msr_07                  0x1fff'880c    0x4  Data  Lc  SchM_Icu.o [15]
+msr_08                  0x1fff'87a4    0x4  Data  Lc  SchM_Can.o [15]
+msr_08                  0x1fff'87d0    0x4  Data  Lc  SchM_Gpt.o [15]
+msr_09                  0x1fff'87a8    0x4  Data  Lc  SchM_Can.o [15]
+msr_11                  0x1fff'8810    0x4  Data  Lc  SchM_Icu.o [15]
+msr_12                  0x1fff'8814    0x4  Data  Lc  SchM_Icu.o [15]
+msr_13                  0x1fff'87ac    0x4  Data  Lc  SchM_Can.o [15]
+msr_14                  0x1fff'87d4    0x4  Data  Lc  SchM_Gpt.o [15]
+msr_15                  0x1fff'87d8    0x4  Data  Lc  SchM_Gpt.o [15]
+msr_16                  0x1fff'8818    0x4  Data  Lc  SchM_Icu.o [15]
+msr_17                  0x1fff'87dc    0x4  Data  Lc  SchM_Gpt.o [15]
+msr_18                  0x1fff'87e0    0x4  Data  Lc  SchM_Gpt.o [15]
+msr_19                  0x1fff'87e4    0x4  Data  Lc  SchM_Gpt.o [15]
+msr_19                  0x1fff'881c    0x4  Data  Lc  SchM_Icu.o [15]
+msr_21                  0x1fff'8820    0x4  Data  Lc  SchM_Icu.o [15]
+msr_22                  0x1fff'8824    0x4  Data  Lc  SchM_Icu.o [15]
+msr_23                  0x1fff'8828    0x4  Data  Lc  SchM_Icu.o [15]
+msr_25                  0x1fff'882c    0x4  Data  Lc  SchM_Icu.o [15]
+msr_26                  0x1fff'8830    0x4  Data  Lc  SchM_Icu.o [15]
+msr_30                  0x1fff'8834    0x4  Data  Lc  SchM_Icu.o [15]
+msr_31                  0x1fff'8838    0x4  Data  Lc  SchM_Icu.o [15]
+msr_32                  0x1fff'883c    0x4  Data  Lc  SchM_Icu.o [15]
+msr_34                  0x1fff'8840    0x4  Data  Lc  SchM_Icu.o [15]
+msr_35                  0x1fff'8844    0x4  Data  Lc  SchM_Icu.o [15]
+msr_36                  0x1fff'8848    0x4  Data  Lc  SchM_Icu.o [15]
+msr_60                  0x1fff'884c    0x4  Data  Lc  SchM_Icu.o [15]
+msr_61                  0x1fff'8850    0x4  Data  Lc  SchM_Icu.o [15]
+msr_62                  0x1fff'8854    0x4  Data  Lc  SchM_Icu.o [15]
+msr_63                  0x1fff'8858    0x4  Data  Lc  SchM_Icu.o [15]
+msr_64                  0x1fff'885c    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_00        0x1fff'8860    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_01        0x1fff'8864    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_03        0x1fff'87b0    0x4  Data  Lc  SchM_Can.o [15]
+reentry_guard_04        0x1fff'87b4    0x4  Data  Lc  SchM_Can.o [15]
+reentry_guard_04        0x1fff'8868    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_05        0x1fff'87b8    0x4  Data  Lc  SchM_Can.o [15]
+reentry_guard_06        0x1fff'87bc    0x4  Data  Lc  SchM_Can.o [15]
+reentry_guard_07        0x1fff'87c0    0x4  Data  Lc  SchM_Can.o [15]
+reentry_guard_07        0x1fff'886c    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_08        0x1fff'87c4    0x4  Data  Lc  SchM_Can.o [15]
+reentry_guard_08        0x1fff'87e8    0x4  Data  Lc  SchM_Gpt.o [15]
+reentry_guard_09        0x1fff'87c8    0x4  Data  Lc  SchM_Can.o [15]
+reentry_guard_11        0x1fff'8870    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_12        0x1fff'8874    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_13        0x1fff'87cc    0x4  Data  Lc  SchM_Can.o [15]
+reentry_guard_14        0x1fff'87ec    0x4  Data  Lc  SchM_Gpt.o [15]
+reentry_guard_15        0x1fff'87f0    0x4  Data  Lc  SchM_Gpt.o [15]
+reentry_guard_16        0x1fff'8878    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_17        0x1fff'87f4    0x4  Data  Lc  SchM_Gpt.o [15]
+reentry_guard_18        0x1fff'87f8    0x4  Data  Lc  SchM_Gpt.o [15]
+reentry_guard_19        0x1fff'87fc    0x4  Data  Lc  SchM_Gpt.o [15]
+reentry_guard_19        0x1fff'887c    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_21        0x1fff'8880    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_22        0x1fff'8884    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_23        0x1fff'8888    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_25        0x1fff'888c    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_26        0x1fff'8890    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_30        0x1fff'8894    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_31        0x1fff'8898    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_32        0x1fff'889c    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_34        0x1fff'88a0    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_35        0x1fff'88a4    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_36        0x1fff'88a8    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_60        0x1fff'88ac    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_61        0x1fff'88b0    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_62        0x1fff'88b4    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_63        0x1fff'88b8    0x4  Data  Lc  SchM_Icu.o [15]
+reentry_guard_64        0x1fff'88bc    0x4  Data  Lc  SchM_Icu.o [15]
+
+
+[1] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\Application
+[2] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\EB_Config\src
+[3] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Can
+[4] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\CanIf
+[5] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Dem
+[6] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Det
+[7] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Dio
+[8] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\EcuM
+[9] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Gpt
+[10] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Icu
+[11] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Mcl
+[12] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Mcu
+[13] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Os
+[14] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Port
+[15] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\MCAL\Rte
+[16] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\Startup
+[17] = D:\Internal_project\GAM_PHIL_Internal.EmbedTraining\Internal_Projects\001\ecu_1\CAN_Driver\Project_Main - CAN\Project\Flash Debug\Obj\Stub
+[18] = dl7M_tln.a
+[19] = m7M_tls.a
+[20] = rt7M_tl.a
+
+  25'344 bytes of readonly  code memory
+   1'945 bytes of readonly  data memory
+   4'308 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

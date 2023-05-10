@@ -1,0 +1,782 @@
+###############################################################################
+#
+# IAR ELF Linker V9.30.1.335/W64 for ARM                  21/Feb/2023  16:51:06
+# Copyright 2007-2022 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Exe\GettingStarted.out
+#    Map file     =
+#        C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\List\GettingStarted.map
+#    Command line =
+#        -f "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Exe\GettingStarted.out.rsp"
+#        ("C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\EB_Config\src\CDD_Mcl_Cfg.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\EB_Config\src\CDD_Mcl_PBcfg.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Dem\Dem.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Det\Det.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Dio\Dio.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\EB_Config\src\Dio_Cfg.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Dio\Dio_Gpio.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\EcuM\EcuM.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcl\Ftm_Common.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Gpt\Gpt.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\EB_Config\src\Gpt_Cfg.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Gpt\Gpt_Ftm.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Gpt\Gpt_Ipw.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Gpt\Gpt_LPit.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Gpt\Gpt_Lptmr.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\EB_Config\src\Gpt_PBcfg.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Gpt\Gpt_SRtc.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\Stub\IT_Controller.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\Stub\IT_Handler.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcl\LPit_Common.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcl\Lptmr_Common.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\Application\main.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcu\Mcu.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\EB_Config\src\Mcu_Cfg.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcu\Mcu_CMU.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcu\Mcu_CMU_Irq.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcu\Mcu_CortexM4.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcu\Mcu_IPW.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcu\Mcu_IPW_Irq.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\EB_Config\src\Mcu_PBcfg.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcu\Mcu_PCC.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcu\Mcu_PMC.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcu\Mcu_PMC_Irq.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcu\Mcu_RCM.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcu\Mcu_RCM_Irq.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcu\Mcu_SCG.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcu\Mcu_SIM.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Mcu\Mcu_SMC.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Port\Port.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\EB_Config\src\Port_Cfg.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Port\Port_Ipw.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\EB_Config\src\Port_PBcfg.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Port\Port_Port_Ci.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Rte\SchM_Dio.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Rte\SchM_Gpt.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Rte\SchM_Mcu.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\MCAL\Rte\SchM_Port.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\Startup\startup_S32K144.o"
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Obj\Startup\system_S32K144.o" --no_out_extension -o
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\Exe\GettingStarted.out" --redirect _Printf=_PrintfFullNoMb
+#        --redirect _Scanf=_ScanfFullNoMb --map
+#        "C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash
+#        Debug\List\GettingStarted.map" --config "C:\Program Files\IAR
+#        Systems\Embedded Workbench 9.1\arm/config/linker/NXP/S32K144.icf"
+#        --entry __iar_program_start --redirect __write=__write_buffered --vfe
+#        --text_out locale --cpu=Cortex-M4 --fpu=VFPv4_sp)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__CPP_Runtime   = 1
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because --advanced_heap
+was not specified and the application did not appear to
+be primarily optimized for speed.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x3ff] |
+                [from 0x410 to 0x7'ffff] { ro };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block PROC_STACK with size = 0, alignment = 8 { };
+define block HEAP with size = 4K, alignment = 8 { };
+"P3":  place in [from 0x1fff'8000 to 0x1fff'ffff] |
+                [from 0x2000'0000 to 0x2000'6fff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+"P5":  place in [from 0x400 to 0x40f] { section FlashConfig };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  ro section application_specific_ro  in "P2"
+  rw section application_specific_rw  in "P4"
+
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x400
+  .intvec            ro code          0x0   0x400  startup_S32K144.o [12]
+                                  - 0x400   0x400
+
+"P5":                                        0x10
+  FlashConfig        ro code        0x400    0x10  startup_S32K144.o [12]
+                                  - 0x410    0x10
+
+"P1":                                      0x18af
+  .mcal_text         ro code        0x410   0x3ec  Gpt_Ftm.o [7]
+  .mcal_text         ro code        0x7fc   0x3c4  Gpt.o [7]
+  .text              ro code        0xbc0    0xf8  SchM_Gpt.o [11]
+  .text              ro code        0xcb8   0x114  Det.o [4]
+  .mcal_text         ro code        0xdcc    0x3e  Gpt_Ipw.o [7]
+  .text              ro code        0xe0a     0x2  startup_S32K144.o [12]
+  .text              ro code        0xe0c     0x2  EcuM.o [6]
+  .text              ro code        0xe0e     0x2  startup_S32K144.o [12]
+  .mcal_text         ro code        0xe10   0x358  Port_Port_Ci.o [10]
+  .mcal_text         ro code       0x1168   0x26c  Mcu_SCG.o [9]
+  .mcal_const_cfg    const         0x13d4   0x100  Mcu_PBcfg.o [2]
+  .mcal_text         ro code       0x14d4    0xc0  Mcu_SIM.o [9]
+  .mcal_text         ro code       0x1594    0xac  Mcu_IPW.o [9]
+  .mcal_text         ro code       0x1640    0x44  Mcu_RCM.o [9]
+  .mcal_text         ro code       0x1684    0x24  Mcu_PMC.o [9]
+  .mcal_text         ro code       0x16a8    0x10  Mcu_SMC.o [9]
+  .mcal_text         ro code       0x16b8    0x68  Mcu_PCC.o [9]
+  .text              ro code       0x1720    0xa2  packbits_init.o [16]
+  .text              ro code       0x17c2     0x6  abort.o [14]
+  .text              ro code       0x17c8     0xc  XXexit.o [16]
+  .mcal_const_cfg    const         0x17d4    0xa0  Port_PBcfg.o [2]
+  .mcal_text         ro code       0x1874    0x74  Mcu.o [9]
+  .text              ro code       0x18e8    0x54  system_S32K144.o [12]
+  .mcal_const_cfg    const         0x193c    0x50  Port_PBcfg.o [2]
+  .text              ro code       0x198c    0x42  main.o [1]
+  .text              ro code       0x19ce     0x2  startup_S32K144.o [12]
+  .mcal_text         ro code       0x19d0    0x28  Port.o [10]
+  .text              ro code       0x19f8    0x38  zero_init3.o [16]
+  .mcal_const_cfg    const         0x1a30    0x30  Gpt_PBcfg.o [2]
+  .text              ro code       0x1a60    0x28  data_init.o [16]
+  .text              ro code       0x1a88    0x22  fpinit_M.o [15]
+  .iar.init_table    const         0x1aac    0x2c  - Linker created -
+  .text              ro code       0x1ad8     0x2  startup_S32K144.o [12]
+  .mcal_const        const         0x1adc    0x20  Ftm_Common.o [8]
+  .mcal_const_cfg    const         0x1afc    0x20  Mcu_PBcfg.o [2]
+  .text              ro code       0x1b1c    0x1e  cmain.o [16]
+  .text              ro code       0x1b3a     0x4  low_level_init.o [14]
+  .text              ro code       0x1b3e     0x4  exit.o [14]
+  .text              ro code       0x1b42     0x2  startup_S32K144.o [12]
+  .text              ro code       0x1b44     0xa  cexit.o [16]
+  .text              ro code       0x1b4e     0x2  startup_S32K144.o [12]
+  .mcal_const_cfg    const         0x1b50    0x1c  Gpt_PBcfg.o [2]
+  .mcal_const_cfg    const         0x1b6c    0x1c  Mcu_PBcfg.o [2]
+  .text              ro code       0x1b88    0x1c  cstartup_M.o [16]
+  .mcal_const_cfg    const         0x1ba4    0x18  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x1bbc    0x18  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x1bd4    0x18  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x1bec    0x18  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x1c04    0x18  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x1c1c    0x18  Port_PBcfg.o [2]
+  .mcal_const_cfg    const         0x1c34    0x14  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x1c48    0x10  Mcu_PBcfg.o [2]
+  .text              ro code       0x1c58    0x10  startup_S32K144.o [12]
+  .mcal_const_cfg    const         0x1c68     0xc  Mcu_PBcfg.o [2]
+  .text              ro code       0x1c74     0xa  IT_Handler.o [13]
+  .text              ro code       0x1c7e     0x2  startup_S32K144.o [12]
+  .mcal_const_cfg    const         0x1c80     0x8  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x1c88     0x8  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x1c90     0x8  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x1c98     0x8  Port_PBcfg.o [2]
+  .mcal_const_cfg    const         0x1ca0     0x4  Mcu_PBcfg.o [2]
+  .mcal_const_cfg    const         0x1ca4     0x4  Mcu_PBcfg.o [2]
+  .text              ro code       0x1ca8     0x4  startup_S32K144.o [12]
+  .text              ro code       0x1cac     0x2  startup_S32K144.o [12]
+  .text              ro code       0x1cae     0x2  startup_S32K144.o [12]
+  .rodata            const         0x1cb0     0x0  zero_init3.o [16]
+  .rodata            const         0x1cb0     0x0  packbits_init.o [16]
+  Initializer bytes  const         0x1cb0     0xf  <for P3 s0>
+                                 - 0x1cbf  0x18af
+
+"P3", part 1 of 3:                          0x219
+  P3 s0                       0x1fff'8000   0x219  <Init block>
+    .mcal_data       inited   0x1fff'8000   0x200  Gpt_Ftm.o [7]
+    .data            inited   0x1fff'8200     0x8  main.o [1]
+    .mcal_data       inited   0x1fff'8208     0x4  Gpt.o [7]
+    .mcal_data       inited   0x1fff'820c     0x4  Mcu.o [9]
+    .mcal_data       inited   0x1fff'8210     0x4  Mcu_IPW.o [9]
+    .mcal_data       inited   0x1fff'8214     0x4  Port.o [10]
+    .mcal_data       inited   0x1fff'8218     0x1  Gpt.o [7]
+                            - 0x1fff'8219   0x219
+
+"P3", part 2 of 3:                           0x90
+  .mcal_bss          zero     0x1fff'821c    0x14  Port_Port_Ci.o [10]
+  .bss               zero     0x1fff'8230    0x10  Det.o [4]
+  .bss               zero     0x1fff'8240    0x10  Det.o [4]
+  .bss               zero     0x1fff'8250     0x8  Det.o [4]
+  .bss               zero     0x1fff'8258     0x8  Det.o [4]
+  .bss               zero     0x1fff'8260     0x8  Det.o [4]
+  .bss               zero     0x1fff'8268     0x8  Det.o [4]
+  .bss               zero     0x1fff'8270     0x8  Det.o [4]
+  .bss               zero     0x1fff'8278     0x8  Det.o [4]
+  .bss               zero     0x1fff'8280     0x4  Det.o [4]
+  .bss               zero     0x1fff'8284     0x4  Det.o [4]
+  .bss               zero     0x1fff'8288     0x4  SchM_Gpt.o [11]
+  .bss               zero     0x1fff'828c     0x4  SchM_Gpt.o [11]
+  .bss               zero     0x1fff'8290     0x4  SchM_Gpt.o [11]
+  .bss               zero     0x1fff'8294     0x4  SchM_Gpt.o [11]
+  .bss               zero     0x1fff'8298     0x4  SchM_Gpt.o [11]
+  .bss               zero     0x1fff'829c     0x4  SchM_Gpt.o [11]
+  .mcal_bss          zero     0x1fff'82a0     0x4  Gpt.o [7]
+  .mcal_bss          zero     0x1fff'82a4     0x4  Gpt.o [7]
+  .bss               zero     0x1fff'82a8     0x1  Det.o [4]
+  .bss               zero     0x1fff'82a9     0x1  Det.o [4]
+  .mcal_bss          zero     0x1fff'82aa     0x1  Mcu.o [9]
+  .mcal_bss          zero     0x1fff'82ab     0x1  Mcu.o [9]
+                            - 0x1fff'82ac    0x90
+
+"P3", part 3 of 3:                          0x800
+  CSTACK                      0x1fff'82b0   0x800  <Block>
+    CSTACK           uninit   0x1fff'82b0   0x800  <Block tail>
+                            - 0x1fff'8ab0   0x800
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+       0x1cbf     0x7'ffff  0x7'e341
+  0x1fff'8219  0x1fff'821b       0x3
+  0x1fff'82ac  0x1fff'82af       0x4
+  0x1fff'8ab0  0x1fff'ffff    0x7550
+  0x2000'0000  0x2000'6fff    0x7000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x90:
+          0x1fff'821c   0x90
+
+Copy/packbits (__iar_packbits_init3)
+    1 source range, total size 0xf (2% of destination):
+               0x1cb0    0xf
+    1 destination range, total size 0x219:
+          0x1fff'8000  0x219
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module             ro code  ro data  rw data
+    ------             -------  -------  -------
+command line/config:
+    --------------------------------------------
+    Total:
+
+C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\Application: [1]
+    main.o                  66                 8
+    --------------------------------------------
+    Total:                  66                 8
+
+C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\EB_Config\src: [2]
+    Gpt_PBcfg.o                      76
+    Mcu_PBcfg.o                     516
+    Port_PBcfg.o                    272
+    --------------------------------------------
+    Total:                          864
+
+C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\Dem: [3]
+    --------------------------------------------
+    Total:
+
+C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\Det: [4]
+    Det.o                  276                90
+    --------------------------------------------
+    Total:                 276                90
+
+C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\Dio: [5]
+    --------------------------------------------
+    Total:
+
+C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\EcuM: [6]
+    EcuM.o                   2
+    --------------------------------------------
+    Total:                   2
+
+C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\Gpt: [7]
+    Gpt.o                  964                13
+    Gpt_Ftm.o            1'004       14      512
+    Gpt_Ipw.o               62
+    --------------------------------------------
+    Total:               2'030       14      525
+
+C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\Mcl: [8]
+    Ftm_Common.o                     32
+    --------------------------------------------
+    Total:                           32
+
+C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\Mcu: [9]
+    Mcu.o                  116                 6
+    Mcu_IPW.o              172                 4
+    Mcu_PCC.o              104
+    Mcu_PMC.o               36
+    Mcu_RCM.o               68
+    Mcu_SCG.o              620
+    Mcu_SIM.o              192
+    Mcu_SMC.o               16
+    --------------------------------------------
+    Total:               1'324                10
+
+C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\Port: [10]
+    Port.o                  40                 4
+    Port_Port_Ci.o         856                20
+    --------------------------------------------
+    Total:                 896                24
+
+C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\Rte: [11]
+    SchM_Gpt.o             248                24
+    --------------------------------------------
+    Total:                 248                24
+
+C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\Startup: [12]
+    startup_S32K144.o    1'078
+    system_S32K144.o        84
+    --------------------------------------------
+    Total:               1'162
+
+C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\Stub: [13]
+    IT_Handler.o            10
+    --------------------------------------------
+    Total:                  10
+
+dl7M_tln.a: [14]
+    abort.o                  6
+    exit.o                   4
+    low_level_init.o         4
+    --------------------------------------------
+    Total:                  14
+
+m7M_tls.a: [15]
+    fpinit_M.o              34
+    --------------------------------------------
+    Total:                  34
+
+rt7M_tl.a: [16]
+    XXexit.o                12
+    cexit.o                 10
+    cmain.o                 30
+    cstartup_M.o            28
+    data_init.o             40
+    packbits_init.o        162
+    zero_init3.o            56
+    --------------------------------------------
+    Total:                 338
+
+    Gaps                              4
+    Linker created                   45    2'048
+------------------------------------------------
+    Grand Total:         6'400      959    2'729
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base        0x1aac          --   Gb  - Linker created -
+.iar.init_table$$Limit       0x1ad8          --   Gb  - Linker created -
+?main                        0x1b1d         Code  Gb  cmain.o [16]
+ADC0_IRQHandler              0x1ca9         Code  Wk  startup_S32K144.o [12]
+ADC1_IRQHandler              0x1ca9         Code  Wk  startup_S32K144.o [12]
+BusFault_Handler             0x1ad9         Code  Wk  startup_S32K144.o [12]
+CAN0_Error_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+CAN0_ORed_0_15_MB_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+CAN0_ORed_16_31_MB_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+CAN0_ORed_IRQHandler         0x1ca9         Code  Wk  startup_S32K144.o [12]
+CAN0_Wake_Up_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+CAN1_Error_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+CAN1_ORed_0_15_MB_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+CAN1_ORed_IRQHandler         0x1ca9         Code  Wk  startup_S32K144.o [12]
+CAN2_Error_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+CAN2_ORed_0_15_MB_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+CAN2_ORed_IRQHandler         0x1ca9         Code  Wk  startup_S32K144.o [12]
+CMP0_IRQHandler              0x1ca9         Code  Wk  startup_S32K144.o [12]
+CSTACK$$Base            0x1fff'82b0          --   Gb  - Linker created -
+CSTACK$$Limit           0x1fff'8ab0          --   Gb  - Linker created -
+DMA0_IRQHandler              0x1ca9         Code  Wk  startup_S32K144.o [12]
+DMA10_IRQHandler             0x1ca9         Code  Wk  startup_S32K144.o [12]
+DMA11_IRQHandler             0x1ca9         Code  Wk  startup_S32K144.o [12]
+DMA12_IRQHandler             0x1ca9         Code  Wk  startup_S32K144.o [12]
+DMA13_IRQHandler             0x1ca9         Code  Wk  startup_S32K144.o [12]
+DMA14_IRQHandler             0x1ca9         Code  Wk  startup_S32K144.o [12]
+DMA15_IRQHandler             0x1ca9         Code  Wk  startup_S32K144.o [12]
+DMA1_IRQHandler              0x1ca9         Code  Wk  startup_S32K144.o [12]
+DMA2_IRQHandler              0x1ca9         Code  Wk  startup_S32K144.o [12]
+DMA3_IRQHandler              0x1ca9         Code  Wk  startup_S32K144.o [12]
+DMA4_IRQHandler              0x1ca9         Code  Wk  startup_S32K144.o [12]
+DMA5_IRQHandler              0x1ca9         Code  Wk  startup_S32K144.o [12]
+DMA6_IRQHandler              0x1ca9         Code  Wk  startup_S32K144.o [12]
+DMA7_IRQHandler              0x1ca9         Code  Wk  startup_S32K144.o [12]
+DMA8_IRQHandler              0x1ca9         Code  Wk  startup_S32K144.o [12]
+DMA9_IRQHandler              0x1ca9         Code  Wk  startup_S32K144.o [12]
+DMA_Error_IRQHandler         0x1ca9         Code  Wk  startup_S32K144.o [12]
+DebugMon_Handler             0x1c7f         Code  Wk  startup_S32K144.o [12]
+DefaultISR                   0x1ca9         Code  Wk  startup_S32K144.o [12]
+Det_ApiId               0x1fff'8258    0x8  Data  Gb  Det.o [4]
+Det_ErrorId             0x1fff'8260    0x8  Data  Gb  Det.o [4]
+Det_InstanceId          0x1fff'8250    0x8  Data  Gb  Det.o [4]
+Det_ModuleId            0x1fff'8230   0x10  Data  Gb  Det.o [4]
+Det_OverflowEvent       0x1fff'82a8    0x1  Data  Gb  Det.o [4]
+Det_ReportError               0xcb9   0x72  Code  Gb  Det.o [4]
+Det_ReportRuntimeError        0xd2b   0x72  Code  Gb  Det.o [4]
+Det_RuntimeApiId        0x1fff'8270    0x8  Data  Gb  Det.o [4]
+Det_RuntimeErrorId      0x1fff'8278    0x8  Data  Gb  Det.o [4]
+Det_RuntimeInstanceId   0x1fff'8268    0x8  Data  Gb  Det.o [4]
+Det_RuntimeModuleId     0x1fff'8240   0x10  Data  Gb  Det.o [4]
+Det_RuntimeOverflowEvent
+                        0x1fff'82a9    0x1  Data  Gb  Det.o [4]
+Det_numEventErrors      0x1fff'8280    0x4  Data  Gb  Det.o [4]
+Det_numRuntimeEventErrors
+                        0x1fff'8284    0x4  Data  Gb  Det.o [4]
+ERM_double_fault_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+ERM_single_fault_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+EcuM_CheckWakeup              0xe0d    0x2  Code  Gb  EcuM.o [6]
+FIRC_ClockConfigPB0_0        0x1bd4   0x18  Data  Lc  Mcu_PBcfg.o [2]
+FLEXIO_IRQHandler            0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTFC_Fault_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTFC_IRQHandler              0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM0_Ch0_Ch1_IRQHandler
+                             0x1c75    0xa  Code  Gb  IT_Handler.o [13]
+FTM0_Ch2_Ch3_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM0_Ch4_Ch5_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM0_Ch6_Ch7_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM0_Fault_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM0_Ovf_Reload_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM1_Ch0_Ch1_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM1_Ch2_Ch3_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM1_Ch4_Ch5_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM1_Ch6_Ch7_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM1_Fault_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM1_Ovf_Reload_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM2_Ch0_Ch1_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM2_Ch2_Ch3_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM2_Ch4_Ch5_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM2_Ch6_Ch7_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM2_Fault_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM2_Ovf_Reload_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM3_Ch0_Ch1_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM3_Ch2_Ch3_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM3_Ch4_Ch5_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM3_Ch6_Ch7_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM3_Fault_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM3_Ovf_Reload_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+FTM_BASE_ADDR32              0x1adc   0x20  Data  Gb  Ftm_Common.o [8]
+GptNotification_FTM0         0x19cd    0x2  Code  Gb  main.o [1]
+Gpt_Config                   0x1a30   0x30  Data  Gb  Gpt_PBcfg.o [2]
+Gpt_EnableNotification        0xabb   0x54  Code  Gb  Gpt.o [7]
+Gpt_Ftm_Init                  0x4fb  0x1d2  Code  Gb  Gpt_Ftm.o [7]
+Gpt_Ftm_ProcessCommonInterrupt
+                              0x411   0xea  Code  Gb  Gpt_Ftm.o [7]
+Gpt_Ftm_StartTimer            0x6cd   0xb6  Code  Gb  Gpt_Ftm.o [7]
+Gpt_Ftm_StopTimer             0x783   0x6e  Code  Gb  Gpt_Ftm.o [7]
+Gpt_Ftm_u32TargetValue  0x1fff'8000  0x200  Data  Lc  Gpt_Ftm.o [7]
+Gpt_Init                      0x9ad   0x90  Code  Gb  Gpt.o [7]
+Gpt_InitChannelPB            0x1b50   0x1c  Data  Lc  Gpt_PBcfg.o [2]
+Gpt_Ipw_EnableInterrupt
+                              0xe09    0x2  Code  Gb  Gpt_Ipw.o [7]
+Gpt_Ipw_Init                  0xdcd   0x18  Code  Gb  Gpt_Ipw.o [7]
+Gpt_Ipw_StartTimer            0xde5   0x12  Code  Gb  Gpt_Ipw.o [7]
+Gpt_Ipw_StopTimer             0xdf7   0x12  Code  Gb  Gpt_Ipw.o [7]
+Gpt_ProcessCommonInterrupt
+                              0xb0f   0xa0  Code  Gb  Gpt.o [7]
+Gpt_StartTimer                0xa3d   0x7e  Code  Gb  Gpt.o [7]
+Gpt_ValidateChannelCall
+                              0x7fd   0x3e  Code  Lc  Gpt.o [7]
+Gpt_ValidateChannelNotification
+                              0x883   0x34  Code  Lc  Gpt.o [7]
+Gpt_ValidateChannelStatus
+                              0x8b7   0xa2  Code  Lc  Gpt.o [7]
+Gpt_ValidateGlobalCall        0x83b   0x48  Code  Lc  Gpt.o [7]
+Gpt_ValidateParamPtrInit
+                              0x98f   0x1e  Code  Lc  Gpt.o [7]
+Gpt_ValidateParamValue        0x959   0x36  Code  Lc  Gpt.o [7]
+Gpt_aChannelInfo        0x1fff'82a0    0x4  Data  Lc  Gpt.o [7]
+Gpt_aStopTime           0x1fff'82a4    0x4  Data  Lc  Gpt.o [7]
+Gpt_eMode               0x1fff'8218    0x1  Data  Lc  Gpt.o [7]
+Gpt_pConfig             0x1fff'8208    0x4  Data  Lc  Gpt.o [7]
+Gpt_schm_read_msr             0xbc1    0x6  Code  Gb  SchM_Gpt.o [11]
+HardFault_Handler             0xe0f         Code  Wk  startup_S32K144.o [12]
+LPI2C0_Master_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+LPI2C0_Slave_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+LPIT0_Ch0_IRQHandler         0x1ca9         Code  Wk  startup_S32K144.o [12]
+LPIT0_Ch1_IRQHandler         0x1ca9         Code  Wk  startup_S32K144.o [12]
+LPIT0_Ch2_IRQHandler         0x1ca9         Code  Wk  startup_S32K144.o [12]
+LPIT0_Ch3_IRQHandler         0x1ca9         Code  Wk  startup_S32K144.o [12]
+LPSPI0_IRQHandler            0x1ca9         Code  Wk  startup_S32K144.o [12]
+LPSPI1_IRQHandler            0x1ca9         Code  Wk  startup_S32K144.o [12]
+LPSPI2_IRQHandler            0x1ca9         Code  Wk  startup_S32K144.o [12]
+LPTMR0_IRQHandler            0x1ca9         Code  Wk  startup_S32K144.o [12]
+LPUART0_RxTx_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+LPUART1_RxTx_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+LPUART2_RxTx_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+LVD_LVW_IRQHandler           0x1ca9         Code  Wk  startup_S32K144.o [12]
+MCM_IRQHandler               0x1ca9         Code  Wk  startup_S32K144.o [12]
+Mcu_ClockConfigPB0           0x1c34   0x14  Data  Lc  Mcu_PBcfg.o [2]
+Mcu_Config                   0x1c04   0x18  Data  Gb  Mcu_PBcfg.o [2]
+Mcu_HwIPsConfigPB0           0x1c48   0x10  Data  Lc  Mcu_PBcfg.o [2]
+Mcu_Init                     0x1875   0x48  Code  Gb  Mcu.o [9]
+Mcu_InitClock                0x18bd   0x1e  Code  Gb  Mcu.o [9]
+Mcu_Ipw_Init                 0x1595   0x1e  Code  Gb  Mcu_IPW.o [9]
+Mcu_Ipw_InitClock            0x15b3   0x88  Code  Gb  Mcu_IPW.o [9]
+Mcu_Mode_ConfigPB0           0x1c80    0x8  Data  Lc  Mcu_PBcfg.o [2]
+Mcu_PCC_PeripheralConfig
+                             0x16b9   0x68  Code  Gb  Mcu_PCC.o [9]
+Mcu_PMC_PowerInit            0x1685   0x24  Code  Gb  Mcu_PMC.o [9]
+Mcu_RCM_GetCurrentSystemResetIsrSettings
+                             0x165b    0xc  Code  Gb  Mcu_RCM.o [9]
+Mcu_RCM_ResetInit            0x1641   0x1a  Code  Gb  Mcu_RCM.o [9]
+Mcu_RCM_RestoreSystemResetIsrConfig
+                             0x166f    0xc  Code  Gb  Mcu_RCM.o [9]
+Mcu_RCM_SystemResetIsrConfig
+                             0x1667    0x8  Code  Gb  Mcu_RCM.o [9]
+Mcu_SCG_DropSystemClockToTrustedClock
+                             0x11e3   0xd4  Code  Gb  Mcu_SCG.o [9]
+Mcu_SCG_FircInit             0x135d   0x48  Code  Gb  Mcu_SCG.o [9]
+Mcu_SCG_SircInit             0x1313   0x4a  Code  Gb  Mcu_SCG.o [9]
+Mcu_SCG_SoscInit             0x12b7   0x5c  Code  Gb  Mcu_SCG.o [9]
+Mcu_SCG_SystemClockInit
+                             0x1169   0x7a  Code  Gb  Mcu_SCG.o [9]
+Mcu_SIM_ClockConfig          0x1523   0x3c  Code  Gb  Mcu_SIM.o [9]
+Mcu_SIM_Init                 0x14d5   0x4e  Code  Gb  Mcu_SIM.o [9]
+Mcu_SMC_AllowedModesConfig
+                             0x16a9    0xc  Code  Gb  Mcu_SMC.o [9]
+Mcu_au8ClockConfigIds   0x1fff'82aa    0x1  Data  Lc  Mcu.o [9]
+Mcu_au8ModeConfigIds    0x1fff'82ab    0x1  Data  Lc  Mcu.o [9]
+Mcu_pClockConfig        0x1fff'8210    0x4  Data  Lc  Mcu_IPW.o [9]
+Mcu_pConfigPtr          0x1fff'820c    0x4  Data  Gb  Mcu.o [9]
+MemManage_Handler            0x19cf         Code  Wk  startup_S32K144.o [12]
+NMI_Handler                   0xe0b         Code  Wk  startup_S32K144.o [12]
+PCC_ClockConfigPB0_0         0x1c88    0x8  Data  Lc  Mcu_PBcfg.o [2]
+PCC_aRegistersConfigPB0_0
+                             0x13d4  0x100  Data  Lc  Mcu_PBcfg.o [2]
+PDB0_IRQHandler              0x1ca9         Code  Wk  startup_S32K144.o [12]
+PDB1_IRQHandler              0x1ca9         Code  Wk  startup_S32K144.o [12]
+PMC_ConfigPB0                0x1ca0    0x4  Data  Lc  Mcu_PBcfg.o [2]
+PORTA_IRQHandler             0x1ca9         Code  Wk  startup_S32K144.o [12]
+PORTB_IRQHandler             0x1ca9         Code  Wk  startup_S32K144.o [12]
+PORTC_IRQHandler             0x1ca9         Code  Wk  startup_S32K144.o [12]
+PORTD_IRQHandler             0x1ca9         Code  Wk  startup_S32K144.o [12]
+PORTE_IRQHandler             0x1ca9         Code  Wk  startup_S32K144.o [12]
+PendSV_Handler               0x1cad         Code  Wk  startup_S32K144.o [12]
+Port_Config                  0x1c1c   0x18  Data  Gb  Port_PBcfg.o [2]
+Port_Init                    0x19d1   0x22  Code  Gb  Port.o [10]
+Port_Port_Ci_Init            0x10b5   0x92  Code  Gb  Port_Port_Ci.o [10]
+Port_Port_Ci_Init_ConfiguredPins
+                              0xf55  0x160  Code  Lc  Port_Port_Ci.o [10]
+Port_Port_Ci_Init_UnusedPins
+                              0xe11  0x144  Code  Lc  Port_Port_Ci.o [10]
+Port_Port_Ci_au16GpioDirChangeability
+                        0x1fff'821c   0x14  Data  Lc  Port_Port_Ci.o [10]
+Port_UnUsedPin               0x1c98    0x8  Data  Lc  Port_PBcfg.o [2]
+Port_aPinConfigDefault       0x193c   0x50  Data  Lc  Port_PBcfg.o [2]
+Port_au16NoUnUsedPadsArrayDefault
+                             0x17d4   0xa0  Data  Lc  Port_PBcfg.o [2]
+Port_pConfig            0x1fff'8214    0x4  Data  Gb  Port.o [10]
+RCM_IRQHandler               0x1ca9         Code  Wk  startup_S32K144.o [12]
+RCM_ResetConfigPB0           0x1c90    0x8  Data  Lc  Mcu_PBcfg.o [2]
+RTC_IRQHandler               0x1ca9         Code  Wk  startup_S32K144.o [12]
+RTC_Seconds_IRQHandler       0x1ca9         Code  Wk  startup_S32K144.o [12]
+Read_Collision_IRQHandler
+                             0x1ca9         Code  Wk  startup_S32K144.o [12]
+Region$$Table$$Base          0x1aac          --   Gb  - Linker created -
+Region$$Table$$Limit         0x1ad8          --   Gb  - Linker created -
+Reserved100_IRQHandler       0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved103_IRQHandler       0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved105_IRQHandler       0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved106_IRQHandler       0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved107_IRQHandler       0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved110_IRQHandler       0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved112_IRQHandler       0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved113_IRQHandler       0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved114_IRQHandler       0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved45_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved46_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved48_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved50_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved52_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved53_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved54_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved58_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved59_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved69_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved70_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved71_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved72_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved81_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved82_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved83_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved86_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved87_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved88_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved89_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved90_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved91_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved92_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved93_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reserved99_IRQHandler        0x1ca9         Code  Wk  startup_S32K144.o [12]
+Reset_Handler                0x1c59         Code  Wk  startup_S32K144.o [12]
+SCG_ClockConfigPB0_0         0x1afc   0x20  Data  Lc  Mcu_PBcfg.o [2]
+SCG_IRQHandler               0x1ca9         Code  Wk  startup_S32K144.o [12]
+SIM_ClockConfigPB0_0         0x1c68    0xc  Data  Lc  Mcu_PBcfg.o [2]
+SIM_ConfigPB0                0x1b6c   0x1c  Data  Lc  Mcu_PBcfg.o [2]
+SIRC_ClockConfigPB0_0        0x1bbc   0x18  Data  Lc  Mcu_PBcfg.o [2]
+SMC_ConfigPB0                0x1ca4    0x4  Data  Lc  Mcu_PBcfg.o [2]
+SOSC_ClockConfigPB0_0        0x1ba4   0x18  Data  Lc  Mcu_PBcfg.o [2]
+SPLL_ClockConfigPB0_0        0x1bec   0x18  Data  Lc  Mcu_PBcfg.o [2]
+SVC_Handler                  0x1b4f         Code  Wk  startup_S32K144.o [12]
+SWI_IRQHandler               0x1ca9         Code  Wk  startup_S32K144.o [12]
+SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_17
+                              0xbc9   0x26  Code  Gb  SchM_Gpt.o [11]
+SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_18
+                              0xbf1   0x26  Code  Gb  SchM_Gpt.o [11]
+SchM_Enter_Gpt_GPT_EXCLUSIVE_AREA_19
+                              0xc19   0x26  Code  Gb  SchM_Gpt.o [11]
+SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_17
+                              0xc4d   0x1c  Code  Gb  SchM_Gpt.o [11]
+SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_18
+                              0xc69   0x1c  Code  Gb  SchM_Gpt.o [11]
+SchM_Exit_Gpt_GPT_EXCLUSIVE_AREA_19
+                              0xc85   0x1c  Code  Gb  SchM_Gpt.o [11]
+SysTick_Handler              0x1caf         Code  Wk  startup_S32K144.o [12]
+SystemInit                   0x18e9   0x34  Code  Gb  system_S32K144.o [12]
+UsageFault_Handler           0x1b43         Code  Wk  startup_S32K144.o [12]
+WDOG_EWM_IRQHandler          0x1ca9         Code  Wk  startup_S32K144.o [12]
+__cmain                      0x1b1d         Code  Gb  cmain.o [16]
+__exit                       0x17c9         Code  Gb  XXexit.o [16]
+__iar_data_init3             0x1a61   0x28  Code  Gb  data_init.o [16]
+__iar_init_vfp               0x1a89         Code  Gb  fpinit_M.o [15]
+__iar_packbits_init3         0x1721   0xa2  Code  Gb  packbits_init.o [16]
+__iar_program_start          0x1b89         Code  Gb  cstartup_M.o [16]
+__iar_zero_init3             0x19f9   0x38  Code  Gb  zero_init3.o [16]
+__low_level_init             0x1b3b    0x4  Code  Gb  low_level_init.o [14]
+__vector_table                  0x0         Data  Gb  startup_S32K144.o [12]
+_call_main                   0x1b29         Code  Gb  cmain.o [16]
+_exit                        0x1b45         Code  Gb  cexit.o [16]
+abort                        0x17c3    0x6  Code  Gb  abort.o [14]
+exit                         0x1b3f    0x4  Code  Gb  exit.o [14]
+main                         0x198d   0x30  Code  Gb  main.o [1]
+msr_17                  0x1fff'8288    0x4  Data  Lc  SchM_Gpt.o [11]
+msr_18                  0x1fff'828c    0x4  Data  Lc  SchM_Gpt.o [11]
+msr_19                  0x1fff'8290    0x4  Data  Lc  SchM_Gpt.o [11]
+reentry_guard_17        0x1fff'8294    0x4  Data  Lc  SchM_Gpt.o [11]
+reentry_guard_18        0x1fff'8298    0x4  Data  Lc  SchM_Gpt.o [11]
+reentry_guard_19        0x1fff'829c    0x4  Data  Lc  SchM_Gpt.o [11]
+targetTime              0x1fff'8200    0x8  Data  Gb  main.o [1]
+
+
+[1] = C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\Application
+[2] = C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\EB_Config\src
+[3] = C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\Dem
+[4] = C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\Det
+[5] = C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\Dio
+[6] = C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\EcuM
+[7] = C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\Gpt
+[8] = C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\Mcl
+[9] = C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\Mcu
+[10] = C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\Port
+[11] = C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\MCAL\Rte
+[12] = C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\Startup
+[13] = C:\Users\allenglen.cabornay\Desktop\Project\GettingStarted\Flash Debug\Obj\Stub
+[14] = dl7M_tln.a
+[15] = m7M_tls.a
+[16] = rt7M_tl.a
+
+  6'400 bytes of readonly  code memory
+    959 bytes of readonly  data memory
+  2'729 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

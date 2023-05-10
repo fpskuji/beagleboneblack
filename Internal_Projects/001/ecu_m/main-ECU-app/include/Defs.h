@@ -1,0 +1,24 @@
+#ifndef DEFS_H
+#define DEFS_H
+
+#define	MAX_TASK		16
+#define BYTE_DATA_SHIFT	8
+#define CAN_DATA_LENGTH	1
+#define ZERO			0
+
+static uint8_t ShutDown = ZERO;
+
+typedef enum Error
+{
+	ERROR_OK = ZERO,
+	ERROR_INIT_SOCKET,
+	ERROR_INIT_IOCTL,
+	ERROR_INIT_BIND,
+	ERROR_READ,
+	ERROR_READ_INCOMPLETE_FRAME,
+	ERROR_WRITE,
+	ERROR_WRITE_DLC_LENGTH,
+	ERROR_UNKNOWN
+}RET;
+
+#endif /* DEFS_H */

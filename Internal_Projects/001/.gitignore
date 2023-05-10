@@ -1,0 +1,14 @@
+
+**/.vscode/**
+*.code-workspace
+
+**/Debug/**
+**/settings/**
+
+Resources/**
+TraineesOutput/**
+
+**/.metadata/**
+
+*.json
+*.dep

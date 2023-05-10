@@ -1,0 +1,10 @@
+[Unit]
+Description=Main Application
+After=getty.target
+
+[Service]
+ExecStart=/home/debian/main-ECU-app/MainApplication
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target
