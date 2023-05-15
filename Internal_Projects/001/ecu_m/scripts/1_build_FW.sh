@@ -6,3 +6,4 @@ cd ${HOME_PATH}/${WORKSPACE_PATH}
 source oe-init-build-env
 echo "Building kernel image"
 bitbake core-image-sato-dev
+echo "Build finished"
