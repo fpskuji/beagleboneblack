@@ -1,7 +1,7 @@
 
 DEVPATH="/dev/sd"
-TARGET_PATH="/home/gaviolam/linux_kernel_src/poky/build/tmp/deploy/images/beaglebone-yocto/"
-TARGET_FILE="core-image-sato-dev-beaglebone-yocto.wic"
+TARGET_PATH="/home/gaviolam/linux_kernel_src/kirkstone_4.0/poky/build/tmp/deploy/images/beaglebone/"
+TARGET_FILE="core-image-minimal-dev-beaglebone.wic.xz"
 
 #/home/gaviolam/scripts/mount_sdcard.sh
 #/home/gaviolam/scripts/copy_FW.sh
