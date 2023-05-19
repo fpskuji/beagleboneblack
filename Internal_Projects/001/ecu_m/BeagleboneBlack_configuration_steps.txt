@@ -1,0 +1,19 @@
+BBB configuration steps:
+1. Download Debian 9.5 or newer firmware image from site: https://beagleboard.org/latest-images.
+   eMMC IoT Flasher if you want to flash it in internal eMMC of the board.
+   SD IoT for SD card bootup
+
+2. burn image in SD car using dd command: dd if=<image_file> of=<SDCARD_device_location>
+
+
+3. Load the SD card into the board and wait for it to write the firmware completely
+
+4. In beaglebone black console edit "/etc/network/interfaces" file and add (this is to automatically set bitrate and set can0 up):
+   auto can0
+   iface can0 inet manual
+       pre-up ip link set can0 up type can bitrate 500000
+       up ifconfig can0 up
+	
+5. Set p9.19 and p9.20 pins as can (Added as system call from main application)
+    config-pin p9.19 can
+    config-pin p9.20 can
